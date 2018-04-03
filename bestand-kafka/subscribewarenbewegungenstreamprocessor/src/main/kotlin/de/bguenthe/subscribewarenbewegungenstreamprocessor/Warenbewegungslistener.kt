@@ -17,12 +17,9 @@ class Warenbewegungslistener {
     fun listen(consumerRecord: ConsumerRecord<String?, String?>, acknowledgment: Acknowledgment) {
         val mapper = jacksonObjectMapper()
 
-//        val warenbewegungen: Warenbewegungen = mapper.readValue<Warenbewegungen>(consumerRecord.value().toString())
-
+        val warenbewegungen: Warenbewegungen = mapper.readValue<Warenbewegungen>(consumerRecord.value().toString())
         countController.counter.getAndIncrement()
 
-//        println(warenbewegungen.uuid)
-
-//        acknowledgment.acknowledge()
+        acknowledgment.acknowledge()
     }
 }

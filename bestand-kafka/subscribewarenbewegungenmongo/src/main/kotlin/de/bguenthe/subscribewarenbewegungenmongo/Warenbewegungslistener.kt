@@ -22,11 +22,10 @@ class Warenbewegungslistener {
         val mapper = jacksonObjectMapper()
 
         val warenbewegungen: Warenbewegungen = mapper.readValue<Warenbewegungen>(consumerRecord.value().toString())
-
         warenbewegungenRepository.save(warenbewegungen)
 
         countController.counter.getAndIncrement()
 
-//        acknowledgment.acknowledge()
+        acknowledgment.acknowledge()
     }
 }

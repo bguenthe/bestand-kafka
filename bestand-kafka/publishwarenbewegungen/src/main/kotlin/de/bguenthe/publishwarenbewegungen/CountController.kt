@@ -70,7 +70,7 @@ class CountController {
                 var jsonStr = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(warenbewegungen)
                 kafkaTemplate.send("warenbewegungen", uuid.toString(), jsonStr)
                 counter.getAndIncrement()
-                if (counter.get() % 1000 == 0L) {
+                if (counter.get() % 100 == 0L) {
                     return
                 }
             }
