@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bestand Kafka Demo</title>
+
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+
+    <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<h1>GoTo</h1>
+<div class="container">
+    <input type="button" id="sendvollepulle" class="btn btn-info" value="Volle Pulle">
+    <input type="button" id="send100" class="btn btn-info" value="1000">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="/mongocount/">Mongocount</a>
+        </div>
+        <div class="col-md-4">Anzahl verarbeiteter Datensätze
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <a href="/mongolast/">Mongolast</a>
+        </div>
+        <div class="col-md-4">Letzter gespeicherter Datensatz
+        </div>
+    </div>
+    <h3>Gesendete Sätze:</h3>
+    <div id="primes">
+    </div>
+    <h3>Gespeicherte Sätze Mongo:</h3>
+    <div id="submongo">
+    </div>
+    <h3>Prozessierte Sätze:</h3>
+    <div id="subprocessed">
+    </div>
+
+</div>
+<script>
+    var ws = new WebSocket("ws://localhost:8080/publishwarenbewegungen/count");
+    ws.onopen = function () {
+        console.log('connection established')
+    };
+    ws.onclose = function () {
+        console.log('connection closed')
+    };
+    ws.onerror = function (err) {
+        console.log('error: ', err)
+    };
+    ws.onmessage = function (message) {
+        // console.log(message.data)
+        document.getElementById('primes').innerHTML = '<div>' + message.data + '</div>';
+    };
+
+    var wssubmongo = new WebSocket("ws://localhost:8081/subscribewarenbewegungenmongo/count");
+    wssubmongo.onopen = function () {
+        console.log('connection established')
+    };
+    wssubmongo.onclose = function () {
+        console.log('connection closed')
+    };
+    wssubmongo.onerror = function (err) {
+        console.log('error: ', err)
+    };
+    wssubmongo.onmessage = function (message) {
+        // console.log(message.data)
+        document.getElementById('submongo').innerHTML = '<div>' + message.data + '</div>';
+    };
+
+    var wssubprocessed = new WebSocket("ws://localhost:8082/subscribewarenbewegungenstreamprocessor/count");
+    wssubprocessed.onopen = function () {
+        console.log('connection established')
+    };
+    wssubprocessed.onclose = function () {
+        console.log('connection closed')
+    };
+    wssubprocessed.onerror = function (err) {
+        console.log('error: ', err)
+    };
+    wssubprocessed.onmessage = function (message) {
+        // console.log(message.data)
+        document.getElementById('subprocessed').innerHTML = '<div>' + message.data + '</div>';
+    };
+
+    $(function(){
+        $('#sendvollepulle').on('click', function (e) {
+            $.get("/pubstart/"); // no return data needed
+        });
+    });
+
+    $(function(){
+        $('#send100').on('click', function (e) {
+            $.get("/pubslow/"); // no return data needed
+        });
+    });
+
+</script>
+</body>
+</html>

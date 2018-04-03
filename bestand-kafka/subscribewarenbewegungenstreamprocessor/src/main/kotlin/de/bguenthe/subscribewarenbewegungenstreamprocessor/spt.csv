@@ -1,0 +1,799 @@
+ID;NAME;Kartenart;Quellkonto KontoID;Quellkonto;Quellkonto Beschreibung;Quellkonto BUB;Quellkonto LIB;Zielkonto KontoID;Zielkonto;Zielkonto Beschreibung;Zielkonto BUB;Zielkonto LIB;Verschiedene Lager;handler
+1;Wareneingang Retoure;305;12;WE Retoure;Wareneingang (WE) Retoure;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+2;Kanalbuchung: Totalschaden Retoure;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;N;
+3;Totalschaden WE;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;N;
+4;Kanalbuchung: Drittverwertung Retoure;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;33;Drittverk. /Verwert.;"Drittverkauf / Verwertung direkt aus dem Lager bzw. Fililale
+Abgang aus BUB";N;N;N;
+5;Abgabe lagerfähige Retoure (HF);339;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;;
+6;Umbuchung in andere Retourenstelle;;13;Transp.best gesperrt;"Transportbestand; der nicht zusagbar und nicht lieferbar ist";Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+7;Abgabe lagerfähige Retoure (DL);330;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+8;Lagerdifferenz;305;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+9;Rückgabe an Mandant (Klärfall);315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;23;Rueckgabe Mandant;"Umsatz Rueckgabe von Ware an den
+Mandanten";N;N;N;
+10;Totalschaden;;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;N;
+11;Abgabe Retoure;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;13;Transp.best gesperrt;"Transportbestand; der nicht zusagbar und nicht lieferbar ist";Y;N;;
+12;Storno Abgabe an Ruecksendestelle;;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;13;Transp.best gesperrt;"Transportbestand; der nicht zusagbar und nicht lieferbar ist";Y;N;N;
+13;Verkauf an Kunde;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;N;205
+14;Storno Rueckgabe;;7;Rueckgabe Lieferant;Umsatz Rueckgabe von Ware an Lieferant;N;N;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;N;
+15;Storno Rueckgabe;;23;Rueckgabe Mandant;"Umsatz Rueckgabe von Ware an den
+Mandanten";N;N;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;N;
+16;Storno Totalschaden;;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;N;
+17;Totalschaden;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;;
+18;neg. Bestandsdiff. Fakturierb. Bestand;340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+19;pos. Bestandsdiff. Fakturierb. Bestand;330;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+20;Warenrücksendung Retouren (WRR) - Teil 1;-1;95;Bestand RS nicht-bub;nicht bub-relevanter Bestand der Rücksendestelle für den Konzern;N;N;94;Transp. gesp. n-bub;Gesperrter nicht bub-relevanter Transportbestand (der Rücksendestelle) für den Konzern;N;N;N;
+21;Kanalumbuchung aus Kanal Lieferant T.1;305;95;Bestand RS nicht-bub;nicht bub-relevanter Bestand der Rücksendestelle für den Konzern;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+22;Kanalumbuchg. Lieferant - neuer Kanal T2;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+23;Manuelle Warenrücksendung Retouren;-1;95;Bestand RS nicht-bub;nicht bub-relevanter Bestand der Rücksendestelle für den Konzern;N;N;7;Rueckgabe Lieferant;Umsatz Rueckgabe von Ware an Lieferant;N;N;N;
+24;Auslagerung Rücksendestelle: Umfuhr;-1;95;Bestand RS nicht-bub;nicht bub-relevanter Bestand der Rücksendestelle für den Konzern;N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+25;Auslagerg. RSS: Verdichtg.Fachbodenlager;-1;95;Bestand RS nicht-bub;nicht bub-relevanter Bestand der Rücksendestelle für den Konzern;N;N;94;Transp. gesp. n-bub;Gesperrter nicht bub-relevanter Transportbestand (der Rücksendestelle) für den Konzern;N;N;N;
+26;Warenrücksendung (WRS) Lieferant;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;7;Rueckgabe Lieferant;Umsatz Rueckgabe von Ware an Lieferant;N;N;N;46
+27;Manuelle Warenrücksendung WE/Überhang;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;7;Rueckgabe Lieferant;Umsatz Rueckgabe von Ware an Lieferant;N;N;N;
+28;Einlagerung Retoure über Rücksendestelle;-1;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;94;Transp. gesp. n-bub;Gesperrter nicht bub-relevanter Transportbestand (der Rücksendestelle) für den Konzern;N;N;N;
+29;Warenrücksendung Retouren (WRR) - Teil 2;-1;94;Transp. gesp. n-bub;Gesperrter nicht bub-relevanter Transportbestand (der Rücksendestelle) für den Konzern;N;N;7;Rueckgabe Lieferant;Umsatz Rueckgabe von Ware an Lieferant;N;N;N;
+30;WE2 f. Ruecksendung melden;;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+31;15 auf 4;-1;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+32;3 auf 4;340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+33;2 auf 4;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+34;25 auf 6;-1;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;N;
+35;38 auf 8;-1;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+36;1 auf 93;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+37;2 auf 93;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+37;2 auf 93;315;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+38;3 auf 93;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+39;4 auf 93;315;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+40;6 auf 93;-1;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+41;8 auf 93;;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+42;9 auf 93;;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+43;10 auf 93;;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+44;14 auf 93;;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+45;20 auf 93;;20;ALT: ALT: Angleichun;"Angleichung BUB an ASTA08 (Master). enthaelt Retoureneingaenge; Inventur  und sonstige Bewegungen ausser WE und Verkauf";N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+46;22 auf 93;;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+47;25 auf 93;;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+48;26 auf 93;;26;Abgabe Rep.an Lief.;"Warenausgang zu reparierender Artikel an den Lieferanten;
+dabei Ausbuchung aus BUB;
+Keine Verbuchung bzgl. REKO
+Verwendet u.a. für Filialabgaben an Lieferant zur Reparatur";N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+49;29 auf 93;;29;Sonstige Auslagerung;Sonstige Auslagerungen;N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+50;32 auf 93;;32;Rückl. Rep.von Lief.;"Wareneingang zu reparierender Artikel vom Lieferanten;
+dabei Einbuchung in BUB;
+Keine Verbuchung bzgl. REKO
+Verwendet u.a. für Filial-WE reparierter Artikel vom Lieferant";N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+51;33 auf 93;;33;Drittverk. /Verwert.;"Drittverkauf / Verwertung direkt aus dem Lager bzw. Fililale
+Abgang aus BUB";N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+52;34 auf 93;;34;Beauftragter Best.;Zur Auslagerung beauftragter Bestand im Zentrallager Stationär/Filiale SAS/Caruso;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+53;35 auf 93;;35;Eigenentn./Geschenk;"Eigenentnahme / Geschenk (z.B. Klopapier) direkt aus dem Lager bzw. Fililale; Abgang aus BUB";N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+54;36 auf 93;;36;Dekoration Filiale;"Entnahme zur Dekoration der Filiale direkt aus dem Fililalbestand; Abgang aus BUB";N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+55;37 auf 93;;37;Retouren-Eingang;BUB-Zugang durch Retouren vom Kunden in Retourenstelle;N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+56;38 auf 93;-1;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+57;42 auf 93;;42;Int.warenabzug IWA;Umsatz Interner Warenabzug und Warenruecklauf;N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+58;90 auf 1;305;90;Initialzugang; Initialzugang Umsatz;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+59;90 auf 2;;90;Initialzugang; Initialzugang Umsatz;N;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+60;90 auf 3;300;90;Initialzugang; Initialzugang Umsatz;N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+61;90 auf 4;305;90;Initialzugang; Initialzugang Umsatz;N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+62;90 auf 6;;90;Initialzugang; Initialzugang Umsatz;N;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+63;90 auf 8;;90;Initialzugang; Initialzugang Umsatz;N;N;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;N;
+64;90 auf 9;;90;Initialzugang; Initialzugang Umsatz;N;N;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;N;
+65;90 auf 10;-1;90;Initialzugang; Initialzugang Umsatz;N;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+66;90 auf 14;;90;Initialzugang; Initialzugang Umsatz;N;N;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;N;
+67;90 auf 20;-1;90;Initialzugang; Initialzugang Umsatz;N;N;20;ALT: ALT: Angleichun;"Angleichung BUB an ASTA08 (Master). enthaelt Retoureneingaenge; Inventur  und sonstige Bewegungen ausser WE und Verkauf";N;N;N;
+68;90 auf 22;;90;Initialzugang; Initialzugang Umsatz;N;N;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;N;
+69;90 auf 25;;90;Initialzugang; Initialzugang Umsatz;N;N;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;N;
+70;90 auf 26;;90;Initialzugang; Initialzugang Umsatz;N;N;26;Abgabe Rep.an Lief.;"Warenausgang zu reparierender Artikel an den Lieferanten;
+dabei Ausbuchung aus BUB;
+Keine Verbuchung bzgl. REKO
+Verwendet u.a. für Filialabgaben an Lieferant zur Reparatur";N;N;N;
+71;90 auf 29;;90;Initialzugang; Initialzugang Umsatz;N;N;29;Sonstige Auslagerung;Sonstige Auslagerungen;N;N;N;
+72;90 auf 32;;90;Initialzugang; Initialzugang Umsatz;N;N;32;Rückl. Rep.von Lief.;"Wareneingang zu reparierender Artikel vom Lieferanten;
+dabei Einbuchung in BUB;
+Keine Verbuchung bzgl. REKO
+Verwendet u.a. für Filial-WE reparierter Artikel vom Lieferant";N;N;N;
+73;90 auf 33;;90;Initialzugang; Initialzugang Umsatz;N;N;33;Drittverk. /Verwert.;"Drittverkauf / Verwertung direkt aus dem Lager bzw. Fililale
+Abgang aus BUB";N;N;N;
+74;90 auf 34;;90;Initialzugang; Initialzugang Umsatz;N;N;34;Beauftragter Best.;Zur Auslagerung beauftragter Bestand im Zentrallager Stationär/Filiale SAS/Caruso;Y;N;N;
+75;90 auf 35;;90;Initialzugang; Initialzugang Umsatz;N;N;35;Eigenentn./Geschenk;"Eigenentnahme / Geschenk (z.B. Klopapier) direkt aus dem Lager bzw. Fililale; Abgang aus BUB";N;N;N;
+76;90 auf 36;;90;Initialzugang; Initialzugang Umsatz;N;N;36;Dekoration Filiale;"Entnahme zur Dekoration der Filiale direkt aus dem Fililalbestand; Abgang aus BUB";N;N;N;
+77;90 auf 37;;90;Initialzugang; Initialzugang Umsatz;N;N;37;Retouren-Eingang;BUB-Zugang durch Retouren vom Kunden in Retourenstelle;N;N;N;
+78;90 auf 38;-1;90;Initialzugang; Initialzugang Umsatz;N;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+79;90 auf 42;;90;Initialzugang; Initialzugang Umsatz;N;N;42;Int.warenabzug IWA;Umsatz Interner Warenabzug und Warenruecklauf;N;N;N;
+80;alt: Filialruecksend.Lascana in Bramfeld;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;12;WE Retoure;Wareneingang (WE) Retoure;N;N;N;
+81;Kanalb in Retourenst.-Lager0;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+82;"Storno KABA; Verfuegbar - Transport";346;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+83;Storno Schwund Auslagerung Stationaer;-1;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+84;WE für Hilfskonto 17;305;16;WE zu Hilfskonto 17;"Auf dem Konto 38 werden Bestände gehalten; die teilweise BUB-relevant sind und teilweise nicht. Um für dieses Konto den BUB korrekt zu ermitteln; ist die Einführung eines technischen Hilfskontos (17) notwendig. Das Konto 16 dient als technisches WE-Konto für dieses Hilfskonto.";N;N;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;Y;
+85;WA für Hilfskonto 17;315;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;18;WA zu Hilfskonto 17;"Auf dem Konto 38 werden Bestände gehalten; die teilweise BUB-relevant sind und teilweise nicht. Um für dieses Konto den BUB korrekt zu ermitteln; ist die Einführung eines technischen Hilfskontos (17) notwendig. Das Konto 18 dient als technisches WA-Konto für dieses Hilfskonto.";N;N;Y;
+86;QS-Sperrung;340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;N;
+87;QS-Entsperrung;330;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+88;man. Bestandsberichtigung negativ;315;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+89;man. Bestandsberichtigung positiv;305;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;N;
+90;Rueckgabe Lieferant aus QS-Sperre;315;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+91;Auslagerung Muster aus QS-Sperre;315;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;42;Int.warenabzug IWA;Umsatz Interner Warenabzug und Warenruecklauf;N;N;N;
+92;Umlagerung QS-gesperrter Best.;;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;Y;
+93;Rueckgabe an Lieferant aus Überhang;315;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+94;Ausbuchung wegen Umzeichnung;315;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+95;Kanalbuchung (Verschrottung etc.;315;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;N;
+96;QS-Warenzugang aus Transportbest.zug.;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;N;
+97;Sonst. Warenvereinnahmung untypisiert;-1;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;N;
+98;Storno sonst.Warenvereinn. untypisiert;-1;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+99;QS-Korrektur NBV(+);-1;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;N;
+100;Totalschaden;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;N;
+101;Umbuchung Fil.;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+102;Lager->Transportbest;346;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;
+103;Transportbest->Lager;336;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+104;WE Filiale/Lager;300;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+105;Abgabe zu Musterung;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;42;Int.warenabzug IWA;Umsatz Interner Warenabzug und Warenruecklauf;N;N;N;
+106;Rücklauf von Muster.;;42;Int.warenabzug IWA;Umsatz Interner Warenabzug und Warenruecklauf;N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+107;Verkauf an Kunde aus Filiale;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;N;
+108;Wareneingang Komm;300;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+109;Bestandsdiff Kommiss;340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+110;Retoure von Kunde;;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+111;negative Inventurdifferenz manuell;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+112;positive Inventurdifferenz manuell;300;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+113;LIB/BUB-Anglei.ASTA;300;20;ALT: ALT: Angleichun;"Angleichung BUB an ASTA08 (Master). enthaelt Retoureneingaenge; Inventur  und sonstige Bewegungen ausser WE und Verkauf";N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+114;BUB-Angleichung ASTA;305;20;ALT: ALT: Angleichun;"Angleichung BUB an ASTA08 (Master). enthaelt Retoureneingaenge; Inventur  und sonstige Bewegungen ausser WE und Verkauf";N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+115;LIB-Angleichung ASTA;330;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+116;Storno WE Filiale;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+117;QS-Korrektur NBV(-);-1;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+118;Einb. Totalschaden;;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+119;Abgabe Rep. an Lief.;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;26;Abgabe Rep.an Lief.;"Warenausgang zu reparierender Artikel an den Lieferanten;
+dabei Ausbuchung aus BUB;
+Keine Verbuchung bzgl. REKO
+Verwendet u.a. für Filialabgaben an Lieferant zur Reparatur";N;N;N;
+120;Rückl. Rep.vom Lief.;;32;Rückl. Rep.von Lief.;"Wareneingang zu reparierender Artikel vom Lieferanten;
+dabei Einbuchung in BUB;
+Keine Verbuchung bzgl. REKO
+Verwendet u.a. für Filial-WE reparierter Artikel vom Lieferant";N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+121;QS-Korrektur(+) NBV gegen Inventur;305;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;N;
+122;sonstige Auslagerung;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;29;Sonstige Auslagerung;Sonstige Auslagerungen;N;N;N;
+123;Sonstige Einlagerung;;29;Sonstige Auslagerung;Sonstige Auslagerungen;N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+124;Anf.Nachschub frei;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;30;ALT: ALT: Angeford.;"Angeforderter Filialnachschub; physische Auslieferung noch nicht bestätigt";Y;N;Y;
+125;Gewährung Nachschub;;30;ALT: ALT: Angeford.;"Angeforderter Filialnachschub; physische Auslieferung noch nicht bestätigt";Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+126;Anf. Nachsch. reserv;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;30;ALT: ALT: Angeford.;"Angeforderter Filialnachschub; physische Auslieferung noch nicht bestätigt";Y;N;Y;
+127;Lagerdiff. Nachschub;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;30;ALT: ALT: Angeford.;"Angeforderter Filialnachschub; physische Auslieferung noch nicht bestätigt";Y;N;Y;
+128;Drittverk./Verwert.;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;33;Drittverk. /Verwert.;"Drittverkauf / Verwertung direkt aus dem Lager bzw. Fililale
+Abgang aus BUB";N;N;N;
+129;Storno Drittverkauf;;33;Drittverk. /Verwert.;"Drittverkauf / Verwertung direkt aus dem Lager bzw. Fililale
+Abgang aus BUB";N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+130;"alt:QS-Sperrung;id_neu=86";340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+131;"alt:QS-Entsperrung;id_neu=87";330;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+132;RLIB-Korrektur(+);330;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+133;RLIB-Korrektur(-);340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;Y;
+134;"Jahresinv; P.Df. alt";330;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+135;"Jahresinv; N.Df. alt";340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;Y;
+136;Verlust bei Transp.;;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;N;
+137;Fund bei Transportsp;;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+138;Umbuchung in beauftragten Bestand;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;34;Beauftragter Best.;Zur Auslagerung beauftragter Bestand im Zentrallager Stationär/Filiale SAS/Caruso;Y;N;N;
+139;Bestandsdiff.Nachsch;340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;Y;
+140;StornBest.diff.Nach.;330;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+141;Lager->Transportbest;346;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+142;Storno Beauftragung;;34;Beauftragter Best.;Zur Auslagerung beauftragter Bestand im Zentrallager Stationär/Filiale SAS/Caruso;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+143;Rücksendung an Lief.;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+144;Storno Rücksend.Lief;300;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+145;Lagerdiff. Kommissionierung Stationaer;-1;34;Beauftragter Best.;Zur Auslagerung beauftragter Bestand im Zentrallager Stationär/Filiale SAS/Caruso;Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+146;Storno Lagerdiff. Kommiss. Stationaer;-1;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;34;Beauftragter Best.;Zur Auslagerung beauftragter Bestand im Zentrallager Stationär/Filiale SAS/Caruso;Y;N;N;
+147;WE vom Lieferant in gesperrten Bestand;305;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+148;Retouren-Eingang vom Kunden;;37;Retouren-Eingang;BUB-Zugang durch Retouren vom Kunden in Retourenstelle;N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+149;Rückgabe an Lieferant;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+150;alt:man. Bestandsberichtigung positiv;305;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+151;alt:Rueckgabe Lieferant aus QS-Sperre;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+152;Einlagerung Retoure in Komm.lager;;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+153;Eingang Kundenretoure;;37;Retouren-Eingang;BUB-Zugang durch Retouren vom Kunden in Retourenstelle;N;N;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;N;
+154;negative Inventurdifferenz Stichtag;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+155;positive Inventurdifferenz Stichtag;300;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+156;WE aus Rüstung vom Lieferanten in QS;305;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+157;Reserv. aus Komm. fuer Entnahme Versand;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+158;Reserv.aus Komm.fuer Entnahme Stationaer;;34;Beauftragter Best.;Zur Auslagerung beauftragter Bestand im Zentrallager Stationär/Filiale SAS/Caruso;Y;N;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;N;
+159;Reserv.fuer Entnahme Versand nach Pickf.;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+160;Inv.diff. Komm.nach Pickfehler Versand;-1;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+161;Auslagerung/Verkauf an Kunde Versand;-1;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;N;
+162;Storno SM Reservierung Versand;300;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+163;Schwund bei Auslagerung Stationaer;;39;Sport Scheck intern.;Reservierter Bestand für SportScheck-International-Aktivitäten im Rahmen der logischen Bestandstrennung. Nur für Lager 23/25. Nur zur Bebuchung durch die Retail-Schicht. Teil des Buchbestands.;Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+164;WE aus Transit in QS(Filialruecksendung);349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+165;Warenausgang Stationaer in Transit;;39;Sport Scheck intern.;Reservierter Bestand für SportScheck-International-Aktivitäten im Rahmen der logischen Bestandstrennung. Nur für Lager 23/25. Nur zur Bebuchung durch die Retail-Schicht. Teil des Buchbestands.;Y;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+166;Auslagerung/Kommissionierung Stationaer;305;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;39;Sport Scheck intern.;Reservierter Bestand für SportScheck-International-Aktivitäten im Rahmen der logischen Bestandstrennung. Nur für Lager 23/25. Nur zur Bebuchung durch die Retail-Schicht. Teil des Buchbestands.;Y;N;N;
+167;Storno Verkauf wegen Lagerdiff.gutschr.;;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+168;"alt:Eigenentnahme/Dreingabe;id_neu=317";;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;35;Eigenentn./Geschenk;"Eigenentnahme / Geschenk (z.B. Klopapier) direkt aus dem Lager bzw. Fililale; Abgang aus BUB";N;N;N;
+169;alt:Storno Eigenentnahme/Dreingabe;;35;Eigenentn./Geschenk;"Eigenentnahme / Geschenk (z.B. Klopapier) direkt aus dem Lager bzw. Fililale; Abgang aus BUB";N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+170;Dekoration;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;36;Dekoration Filiale;"Entnahme zur Dekoration der Filiale direkt aus dem Fililalbestand; Abgang aus BUB";N;N;N;
+171;Storno Dekoration;;36;Dekoration Filiale;"Entnahme zur Dekoration der Filiale direkt aus dem Fililalbestand; Abgang aus BUB";N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+172;Reservierung für sonstige Entnahme;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+173;alt:Auslagerung Muster aus QS-Sperre;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;42;Int.warenabzug IWA;Umsatz Interner Warenabzug und Warenruecklauf;N;N;N;
+174;Auslagerung für Drittgeschaeft aus QS;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;33;Drittverk. /Verwert.;"Drittverkauf / Verwertung direkt aus dem Lager bzw. Fililale
+Abgang aus BUB";N;N;N;
+175;Umlagerung gesperrter Bestand;-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+176;Einlagerung Muster in QS-Sperre;;42;Int.warenabzug IWA;Umsatz Interner Warenabzug und Warenruecklauf;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+177;Einlagerung aus Ruecknahme Drittgesch.;305;33;Drittverk. /Verwert.;"Drittverkauf / Verwertung direkt aus dem Lager bzw. Fililale
+Abgang aus BUB";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+178;Auslagerung nach Konzern-Laufkette;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+179;Einlagerung aus Konzern-Laufkette;305;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+180;Rueckgabe an Lieferant;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+181;Storno Rueckg. an Lief. aus Überhang;305;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+182;"alt:Ausbuchung wegen Umzeichnung;neu=94";;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+183;Einbuchung nach Umzeichnung;305;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+184;alt:Pos. Inventurdiff. Retourenstelle;;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;N;
+185;alt:Neg. Inventurdiff. Retourenstelle;;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+186;alt:Kanalbuchung (Verschrottung etc.);315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;N;
+187;Storno Kanalbuchung;305;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+188;Interner Warenabzug IWA;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;42;Int.warenabzug IWA;Umsatz Interner Warenabzug und Warenruecklauf;N;N;N;
+189;Rueckbuchung Interner Warenabzug IWR;;42;Int.warenabzug IWA;Umsatz Interner Warenabzug und Warenruecklauf;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+190;QS-Entsperrung bei WE2;330;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+191;Storno Umbuchung Transit;336;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+192;alt:Kanalbuchung in Retourenstelle;;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;N;
+193;Storno Auslagerung/Verkauf Versand;-1;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+194;Nachreservierung Versand (PLS-Lager);310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+195;Ausbuchen negative Entnahmen stationaer;;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;39;Sport Scheck intern.;Reservierter Bestand für SportScheck-International-Aktivitäten im Rahmen der logischen Bestandstrennung. Nur für Lager 23/25. Nur zur Bebuchung durch die Retail-Schicht. Teil des Buchbestands.;Y;N;N;
+196;Positive Inventurdiff. im Transit;305;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+196;Positive Inventurdiff. im Transit;339;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+197;Negative Inventurdiff. im Transit;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+197;Negative Inventurdiff. im Transit;315;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+198;Storno Auslag./Kommiss. Stationaer;315;39;Sport Scheck intern.;Reservierter Bestand für SportScheck-International-Aktivitäten im Rahmen der logischen Bestandstrennung. Nur für Lager 23/25. Nur zur Bebuchung durch die Retail-Schicht. Teil des Buchbestands.;Y;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+199;Storno Kundenrechn./Entl.Kundenford.;305;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+200;Inventur-Ausbuchung Fehlbestand;315;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+201;alt:Storno Kanalbuch. Retourenstelle;;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;N;
+202;WE1 / Wareneingang vom Lieferanten;-1;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;N;
+203;WE1-Mengenkorrektur negativ;-1;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+204;WE1-Mengenkorrektur positiv;-1;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;N;
+205;Vereinnahmung WE2;300;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+206;Sonst. Warenvereinnahmung untypisiert;305;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+207;WE-Storno;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+208;Inventurdiff. pos. in reserv.Bestand ;;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;N;
+209;Inventurdiff. neg. in reserv.Bestand ;;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+210;Umbuchung zw. Laegern QS-ungeprueft;;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;Y;
+211;TLIB-Korrektur/Reduktion;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+212;Auslagerung in Transit Ziellager;305;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;
+212;Auslagerung in Transit Ziellager;339;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;
+213;Storno Auslagerung in Transit Ziellager;315;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;Y;
+213;Storno Auslagerung in Transit Ziellager;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;Y;
+214;Warenzugang aus Transitbestand;336;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;46
+215;Storno Warenzugang aus Transitbestand;346;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+216;Reserv. für Entn. Präv. Nachschub;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+217;alt:QS-Warenzugang aus Transportbest.zug;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+218;TLIB-Korrektur (Erhoehung);339;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+219;TLIB-Korrektur (Erhoehung);339;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;
+220;RLIB-Korrektur (Reduktion);340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+221;RLIB-Korrektur (Reduktion);340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;Y;
+222;Reserv. aus Komm. fuer BAUR-Kaufhaus;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+223;Auslagerung fuer Nachschub BAUR-Kaufhaus;-1;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;33;Drittverk. /Verwert.;"Drittverkauf / Verwertung direkt aus dem Lager bzw. Fililale
+Abgang aus BUB";N;N;N;
+224;Storno Auslager. Nachschub BAUR-Kaufhaus;-1;33;Drittverk. /Verwert.;"Drittverkauf / Verwertung direkt aus dem Lager bzw. Fililale
+Abgang aus BUB";N;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+225;Nachreservierfehler fuer BAUR-Kaufhaus;-1;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+226;Ausbuch. wegen Umzeichn. in Retourenst.;;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+227;Einbuch. wegen Umzeichn. in Retourenst.;;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;N;
+228;RLIB-Korrektur (Erhoehung);330;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+229;RLIB-Korrektur (Erhoehung);330;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+230;Storno WE2;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;N;
+231;TLIB-Korrektur (Reduktion);349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;Y;
+232;Bestandsdiff fehlender Kommiss;330;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+233;Berichtigung Rechnung;305;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;Y;
+234;Warenabgang freier Bestand ASTA;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+235;BUB-Korrektur/Angleichung ASTA -;315;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;20;ALT: ALT: Angleichun;"Angleichung BUB an ASTA08 (Master). enthaelt Retoureneingaenge; Inventur  und sonstige Bewegungen ausser WE und Verkauf";N;N;N;
+236;Schwund bei StationaerAuslagerung;;39;Sport Scheck intern.;Reservierter Bestand für SportScheck-International-Aktivitäten im Rahmen der logischen Bestandstrennung. Nur für Lager 23/25. Nur zur Bebuchung durch die Retail-Schicht. Teil des Buchbestands.;Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+237;Warenzugang aus Transitbestand;336;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+238;Warenabgang in Transitbestand;346;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+239;Stornierung einer Gutschrift;315;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;N;
+240;Manuelle Rechnung;315;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;N;
+241;Retourendirektversand;;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;N;
+242;alt:Sonst. Warenvereinnahmung untypis.;-1;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+243;alt:Storno sonst.Warenvereinn. untypis.;-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+244;Einlagerung Muster in QS-Sperre;305;42;Int.warenabzug IWA;Umsatz Interner Warenabzug und Warenruecklauf;N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+245;Einlagerung aus Ruecknahme Drittgesch.;305;33;Drittverk. /Verwert.;"Drittverkauf / Verwertung direkt aus dem Lager bzw. Fililale
+Abgang aus BUB";N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+246;Einlagerung aus Konzern-Laufkette;305;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+247;Storno Rueckg. an Lief. aus Überhang;305;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+248;Rueckbuchung Interner Warenabzug IWR;305;42;Int.warenabzug IWA;Umsatz Interner Warenabzug und Warenruecklauf;N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+249;Storno Kanalbuchung;305;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+250;Einbuchung nach Umzeichnung;305;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+251;free to transport graz;346;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;46
+252;Bestandsberichtigung positiv;305;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+253;Entlastung Ret.Bestand Pilsen;-1;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;Y;
+254;Auslagerung und W-Ausgang Stationaer;339;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+254;Auslagerung und W-Ausgang Stationaer;305;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+255;Schwund bei Auslagerung Stat. m. Etik.;;40;Aufbereitung Stionär;Aufbereitungsbestand Stationaer (Veredelung der Ware fuer Einsatz in Filialen z.B. durch BFS);Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+256;Schwund bei Auslagerung Stat. o. Etik.;;40;Aufbereitung Stionär;Aufbereitungsbestand Stationaer (Veredelung der Ware fuer Einsatz in Filialen z.B. durch BFS);Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+257;Storno KABA Grund Lagerfach;336;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+258;Storno KABA Grund Bestand;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;Y;
+258;Storno KABA Grund Bestand;315;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;Y;
+259;"alt:QS-Korrektur NBV(+);id_neu=99";-1;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+260;"alt:QS-Korrektur NBV(-);id_neu=117";-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+261;alt:QS-Korrektur(+) NBV gegen Inventur;305;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+262;alt:QS-Korrektur(-) NBV gegen Inventur;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+263;Abgabe lagerfähige Retoure an Lager;;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;;
+264;Reservg. aus Komm. fuer Amazon;315;34;Beauftragter Best.;Zur Auslagerung beauftragter Bestand im Zentrallager Stationär/Filiale SAS/Caruso;Y;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+265;Storno Einlagerung Retoure Komm.lager;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;Y;
+266;Bestandsdifferenzen gesperrter Bestand;-1;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+267;DIFF BUB an BUB wirks. Bestandskorrektur;;91;ALT: ALT: DIFF BUB;" Initialzugang Differenz BUB-Umsatz (fällt
+noch weg)";N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;Y;
+268;Fakt. Bestand Reserverlagerbestand (HH);;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;43;ALT: ALT: Reservelag;Reserverlagerbestand (nur Hamburg);N;N;Y;
+269;Initialzugang Wareneingang(WE) Lieferant;;90;Initialzugang; Initialzugang Umsatz;N;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+270;Fehlbestandskorr. zw. Lägern;;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;Y;
+271;Umbuchung in andere Retourenstelle;;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;Y;
+272;Retourenstelle -> Totalschaden;;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;N;
+273;Retourenstelle -> Ruecksendestelle;;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;N;
+274;Transportbestand -> Ruecksendestelle;;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;N;
+275;Ruecksendestelle->Lieferant;;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;7;Rueckgabe Lieferant;Umsatz Rueckgabe von Ware an Lieferant;N;N;N;
+276;Ruecksendestelle -> Drittverkauf;;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;33;Drittverk. /Verwert.;"Drittverkauf / Verwertung direkt aus dem Lager bzw. Fililale
+Abgang aus BUB";N;N;N;
+277;"Ruecksendestelle -> Rueckgabe an
+Mandant";;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;23;Rueckgabe Mandant;"Umsatz Rueckgabe von Ware an den
+Mandanten";N;N;N;
+278;Erhöhung fakturierfähiger Bestand;330;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;;
+279;Reduzierung Retourenbestand;;37;Retouren-Eingang;BUB-Zugang durch Retouren vom Kunden in Retourenstelle;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+280;Abgabe Retoure an Rücksendestelle;;37;Retouren-Eingang;BUB-Zugang durch Retouren vom Kunden in Retourenstelle;N;N;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;;
+281;Bildung Retourenmischwanne;;37;Retouren-Eingang;BUB-Zugang durch Retouren vom Kunden in Retourenstelle;N;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;;
+282;Erhöhung Retourenbestand;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;37;Retouren-Eingang;BUB-Zugang durch Retouren vom Kunden in Retourenstelle;N;N;;
+283;Erhöhung Retourenbestand;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;37;Retouren-Eingang;BUB-Zugang durch Retouren vom Kunden in Retourenstelle;N;N;;
+284;Übergabe RS an RT;;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;37;Retouren-Eingang;BUB-Zugang durch Retouren vom Kunden in Retourenstelle;N;N;;
+285;Abgabe an Rücksendestelle;340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;;
+286;Abgabe an Rücksendestelle;;13;Transp.best gesperrt;"Transportbestand; der nicht zusagbar und nicht lieferbar ist";Y;N;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;;
+287;Rückgabe von Rücksendestelle;;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;;
+288;Rückgabe von Rücksendestelle;;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+289;Erhöhung reservierter Bestand;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;;
+290;Erhöhung reservierter Bestand;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;;
+291;Reduzierung reservierter Bestand;300;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;;
+292;Reduzierung reservierter Bestand;305;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+293;Bestandsdiff. gesperrter Best.;-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;;
+294;Bestandsdiff. TLIB;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;;
+295;Bestandsdiff. Ruecksendestelle;-1;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;;
+296;Bestandsdiff. Retourenstelle;-1;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;;
+297;Bestandsdiff. Entnahmereserve;305;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;;
+298;Neg.Inv.Diff. QS ungeprüft (SM);;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+299;Neg.Bestandsdiff. QS ungeprüft (Konzern);305;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+300;"alt:RAS-Abgang;id_neu=316";;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;11;RAS/RES Umsatz;RAS/RES Reparatur-Ausgang/Eingang (Umsatz);N;N;N;
+301;RES-Zugang;305;11;RAS/RES Umsatz;RAS/RES Reparatur-Ausgang/Eingang (Umsatz);N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+302;Lager -> Transportbestand abg.;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;N;
+303;Transportbestand abg. -> Lager;;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+304;Storno Lager -> Transportbestand abg.;;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+305;Verlust bei Transport;;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;N;
+306;Fund bei Transport;;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;N;
+307;WE aus Transit abg in QS;;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+308;Positive Inventurdiff. im Transit abg.;;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;N;
+309;Negative Inventurdiff. im Transit abg.;;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+310;Transportbestand abg. -> Lager;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;Y;
+311;Auslagerung und W-Ausgang Stationaer;;40;Aufbereitung Stionär;Aufbereitungsbestand Stationaer (Veredelung der Ware fuer Einsatz in Filialen z.B. durch BFS);Y;N;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;N;
+312;initiale Kontenumzeichnung;;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+313;initiale Kontenumzeichnung;;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;N;
+314;TOT: Auslagerung Filiale;;39;Sport Scheck intern.;Reservierter Bestand für SportScheck-International-Aktivitäten im Rahmen der logischen Bestandstrennung. Nur für Lager 23/25. Nur zur Bebuchung durch die Retail-Schicht. Teil des Buchbestands.;Y;N;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;N;
+315;QS-Korrektur(-) NBV gegen Inventur;;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+316;RAS-Abgang;315;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;11;RAS/RES Umsatz;RAS/RES Reparatur-Ausgang/Eingang (Umsatz);N;N;N;
+317;Eigenentnahme/Dreingabe;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;42;Int.warenabzug IWA;Umsatz Interner Warenabzug und Warenruecklauf;N;N;N;
+318;Storno Eigenentnahme/Dreingabe;;42;Int.warenabzug IWA;Umsatz Interner Warenabzug und Warenruecklauf;N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+319;Pos. Inventurdiff. Retourenstelle;305;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;N;
+320;Neg. Inventurdiff. Retourenstelle;;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+321;Kanalbuchung in Retourenstelle;315;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;N;
+322;Storno Kanalbuch. Retourenstelle;;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;N;
+323;Vorreservierungsfehler Versand;305;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+324;Reserv. aus Komm. für präv.Nachschub;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+325;Auslagerung präv. Umfuhr;339;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;
+325;Auslagerung präv. Umfuhr;305;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;
+326;Umbuchung Plusbestand auf Stammlager;-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+327;Umb. Plusbestand auf Stammlager 23 & 25;-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;Y;
+328;Umb. Minusbestand auf Stammlager;-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+329;Umb. Minusbestand auf Stammlager 23 & 25;-1;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+330;90 auf 15;;90;Initialzugang; Initialzugang Umsatz;N;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;N;
+331;90 auf 11;;90;Initialzugang; Initialzugang Umsatz;N;N;11;RAS/RES Umsatz;RAS/RES Reparatur-Ausgang/Eingang (Umsatz);N;N;N;
+332;90 auf 12;;90;Initialzugang; Initialzugang Umsatz;N;N;12;WE Retoure;Wareneingang (WE) Retoure;N;N;N;
+333;RAS aus WE;;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+334;11 auf 93;;11;RAS/RES Umsatz;RAS/RES Reparatur-Ausgang/Eingang (Umsatz);N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+335;90 auf 12;;90;Initialzugang; Initialzugang Umsatz;N;N;12;WE Retoure;Wareneingang (WE) Retoure;N;N;N;
+336;Neg. TransBestDiff. Kontenabgr. Inventur;339;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;
+337;Neg.Diff.Kto.n.liefb./gesp.Bstd Inventur;-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+338;Pos. Fehlbest.Diff. Kontenabgr. Inventur;-1;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+339;Pos. TransBestDiff. Kontenabgr. Inventur;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+340;Neg. Fehlbest.Diff. Kontenabgr. Inventur;-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;Y;
+341;Pos. WE1-Diff.Kontenabgr. Inventur;-1;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;;
+342;Neg. WE1-Diff.Kontenabgr. Inventur;-1;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;;
+343;Pos. Res.Entn.-Diff.Kontenabgr. Inv;-1;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;N;
+344;Neg. Res.Entn.-Diff.Kontenabgr. Inv;-1;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+345;Pos. Fakturf.Diff. Kontenabgr. Inventur;340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+346;Neg. Fakturf.Diff. Kontenabgr. Inventur;330;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+347;Pos. QS-Sperre Diff. Kontenabgr.Inventur;;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+348;Neg. QS-Sperre. Diff. Kontenabgr. Inv.;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;;
+349;Pos. Res.Entn.-Diff.Kontenabgr. Inv-BUB;305;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+350;Neg. Res.Entn. Diff.Kontenabgr. Inv-BUB;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;Y;
+351;WE aus IWA in Filiale;;42;Int.warenabzug IWA;Umsatz Interner Warenabzug und Warenruecklauf;N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+352;St. WE aus IWA in Fil.;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;42;Int.warenabzug IWA;Umsatz Interner Warenabzug und Warenruecklauf;N;N;Y;
+353;KABA Beauftragung Weiden;305;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;162
+353;KABA Beauftragung Weiden;339;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;162
+354;KABA Storno aus Weiden-Datei;315;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;Y;
+354;KABA Storno aus Weiden-Datei;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;Y;
+355;KABA Storno vom Sammler;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;Y;
+355;KABA Storno vom Sammler;315;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;Y;
+356;Bestandserhöhung Witt;-1;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;N;
+357;Bestandsminderung Witt;-1;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+358;Inventurausbuchung Witt-Bestand;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+359;Fakturierung Witt- Bestand (Sammler);-1;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;N;
+360;Migration Witt Kto 1;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+361;Migration Witt Kto 3;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;N;
+362;neg. Inventurausbuchung Witt-Bestand;305;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+363;ALT;-1;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;N;46
+364;Reservierung für SSM International;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;39;Sport Scheck intern.;Reservierter Bestand für SportScheck-International-Aktivitäten im Rahmen der logischen Bestandstrennung. Nur für Lager 23/25. Nur zur Bebuchung durch die Retail-Schicht. Teil des Buchbestands.;Y;N;N;
+365;Storno Reservierung f. SSM International;;39;Sport Scheck intern.;Reservierter Bestand für SportScheck-International-Aktivitäten im Rahmen der logischen Bestandstrennung. Nur für Lager 23/25. Nur zur Bebuchung durch die Retail-Schicht. Teil des Buchbestands.;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+366;KABA Storno vom Sammler;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;Y;46
+366;KABA Storno vom Sammler;315;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;Y;46
+367;Storno Retourenwanne (RTMWS);-1;94;Transp. gesp. n-bub;Gesperrter nicht bub-relevanter Transportbestand (der Rücksendestelle) für den Konzern;N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+368;Einlagerung über Rücksendestelle;-1;94;Transp. gesp. n-bub;Gesperrter nicht bub-relevanter Transportbestand (der Rücksendestelle) für den Konzern;N;N;95;Bestand RS nicht-bub;nicht bub-relevanter Bestand der Rücksendestelle für den Konzern;N;N;N;
+369;Plusdifferenz Rücksendestelle;-1;95;Bestand RS nicht-bub;nicht bub-relevanter Bestand der Rücksendestelle für den Konzern;N;N;95;Bestand RS nicht-bub;nicht bub-relevanter Bestand der Rücksendestelle für den Konzern;N;N;N;
+370;Storno Kanalb. Retourenst. Lager 0;305;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+371;Manuelle Retourenbuchung;305;12;WE Retoure;Wareneingang (WE) Retoure;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+372;Korrektur Kundengutschrift;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;12;WE Retoure;Wareneingang (WE) Retoure;N;N;;
+373;Manuelle Retourenbuchung;305;12;WE Retoure;Wareneingang (WE) Retoure;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+374;Korrektur Kundengutschrift;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;12;WE Retoure;Wareneingang (WE) Retoure;N;N;;
+375;Korrektur Gesperrter Bestand;-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+376;Korrektur Gesperrter Bestand;-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+377;Korrektur Gesperrter Bestand;-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+378;Korrektur Gesperrter Bestand;-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+379;Ausbuchung Transportdifferenzen;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+380;Ausbuchung Lagerdifferenz;340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;;
+381;Ausbuchung gesperrter Bestand;-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;;
+382;Korrektur Fehlbestand;;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;;
+383;Ausbuchung Transport-RS;305;94;Transp. gesp. n-bub;Gesperrter nicht bub-relevanter Transportbestand (der Rücksendestelle) für den Konzern;N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;;
+384;Ausbuchung Bestand RS;305;95;Bestand RS nicht-bub;nicht bub-relevanter Bestand der Rücksendestelle für den Konzern;N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;;
+385;Korrektur Umsatzkonto;305;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;;
+386;Korrektur Umsatzkonto;315;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+387;Korrektur Transportbestand;339;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;;
+388;Erhoehung freier Bestand;330;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;;
+389;Erhoehung gesperrter Bestand;-1;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+390;Korrektur Transportbestand RS;315;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;94;Transp. gesp. n-bub;Gesperrter nicht bub-relevanter Transportbestand (der Rücksendestelle) für den Konzern;N;N;;
+391;Erhöhung Bestand RS;315;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;95;Bestand RS nicht-bub;nicht bub-relevanter Bestand der Rücksendestelle für den Konzern;N;N;;
+392;Korrektur Umsatzkonto;315;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+393;Stornierung WE Retoure;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;12;WE Retoure;Wareneingang (WE) Retoure;N;N;;
+394;Schmuckeinlagerung;330;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;;
+395;Fakturierung Witt-Bestand (Sammler);-1;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;N;46
+396;Umf. gesp. Bestand an anderes KLV Lager ;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;13;Transp.best gesperrt;"Transportbestand; der nicht zusagbar und nicht lieferbar ist";Y;N;Y;
+397;Pos. Gesp.Trans. Kontenabgr. Inventur;;13;Transp.best gesperrt;"Transportbestand; der nicht zusagbar und nicht lieferbar ist";Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+398;Nachres. Pickfehler;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;;
+399;Storno Auslagerung Vers.;;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;;
+400;KABA Storno vom Sammler;315;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;Y;162
+400;KABA Storno vom Sammler;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;Y;162
+401;Storno Vorreservierfehler;315;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;;
+402;Pos. Diff. Fakt. Best.;330;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+403;Neg. Diff. Fakt. Best.;340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+404;Ausbuchung Umfuhr;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+405;NOA-Fakt.-buchg. WA-Kunde aus fakt.Best.;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;;46
+406;Storno einer Rechnung in Fakt. Best.;;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+407;Wareneinlager. aus gesp. Transp.bestand;;13;Transp.best gesperrt;"Transportbestand; der nicht zusagbar und nicht lieferbar ist";Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+408;Filialruecksendung Lascana in Bramfeld;305;12;WE Retoure;Wareneingang (WE) Retoure;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+409;pos. Bestandsdiff. Ruecksendestelle;-1;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;;
+410;Ausbuchung der Ruecksendestelle;;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+411;Ausbuchung des Hilfskontos fuer BUB;;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+412;Ausbuchung WITT-Bestand;;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+413;Ausbuchung gesperrter Bestand;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+414;Ausbuchung Transportbestand;315;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+414;Ausbuchung Transportbestand;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+415;Ausbuchung des fakturierf. Bestandes;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+416;Ausbuchung des Umsatzkontos;315;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+417;Ausbuchung des Retoureneingangs;;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+418;Ausbuchung des abgehenden Transportbest.;;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+419;Ausbuchung von QS gesperrter Best.;;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+420;Ausbuchung von QS ungeprueft / WE1;;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+421;Ausbuchung von Beauftragter Best.;;34;Beauftragter Best.;Zur Auslagerung beauftragter Bestand im Zentrallager Stationär/Filiale SAS/Caruso;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+422;Ausbuchung von Res.fuer Entn. Komm.;-1;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+423;Ausbuchung von Transp. gesp. n-bub;-1;94;Transp. gesp. n-bub;Gesperrter nicht bub-relevanter Transportbestand (der Rücksendestelle) für den Konzern;N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+424;Ausbuchung von Bestand RS nicht-bub;-1;95;Bestand RS nicht-bub;nicht bub-relevanter Bestand der Rücksendestelle für den Konzern;N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+425;Ausbuchung von virtuellem Bestand;;45;Virt. Bestand;Vitueller Bestand;N;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+426;Korr. Rückgabe Lieferant;;7;Rueckgabe Lieferant;Umsatz Rueckgabe von Ware an Lieferant;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+427;Warenausgang Rückgabe Lieferant;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;7;Rueckgabe Lieferant;Umsatz Rueckgabe von Ware an Lieferant;N;N;;
+428;Korr. Rückgabe Mandant;305;23;Rueckgabe Mandant;"Umsatz Rueckgabe von Ware an den
+Mandanten";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+429;Korr. Inventurdiff.;305;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;;
+430;Beauftragung für SSM International;315;39;Sport Scheck intern.;Reservierter Bestand für SportScheck-International-Aktivitäten im Rahmen der logischen Bestandstrennung. Nur für Lager 23/25. Nur zur Bebuchung durch die Retail-Schicht. Teil des Buchbestands.;Y;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+431;Umb. gesperrter Bestand ver.Lager;-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+432;Umb. Transportbe-stand ver.Lager;;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;
+433;Umb. fakt.Best. ver.Lager;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+434;Umb. Bestandsdiff. ver Lager;;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;Y;
+435;Umb. QS-gesp.Best. ver. Lager;;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;Y;
+436;Umb. WE1 ver. Lager;;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;Y;
+437;Umb. Beauftr. Best. ver. Lager;;34;Beauftragter Best.;Zur Auslagerung beauftragter Bestand im Zentrallager Stationär/Filiale SAS/Caruso;Y;N;34;Beauftragter Best.;Zur Auslagerung beauftragter Bestand im Zentrallager Stationär/Filiale SAS/Caruso;Y;N;Y;
+438;Umb. Res. Entn. ver. Lager;;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;Y;
+439;Umb. Kto. 17 ver. Lager;;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;Y;
+440;"Umb. ALT: ALT: Entn.;nich";;39;Sport Scheck intern.;Reservierter Bestand für SportScheck-International-Aktivitäten im Rahmen der logischen Bestandstrennung. Nur für Lager 23/25. Nur zur Bebuchung durch die Retail-Schicht. Teil des Buchbestands.;Y;N;39;Sport Scheck intern.;Reservierter Bestand für SportScheck-International-Aktivitäten im Rahmen der logischen Bestandstrennung. Nur für Lager 23/25. Nur zur Bebuchung durch die Retail-Schicht. Teil des Buchbestands.;Y;N;Y;
+441;Minusdifferenz auf Ruecksendestelle;;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+442;Plusdifferenz auf Ruecksendestelle;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;Y;
+443;Minusdifferenz auf QS-gesperrter Bestand;;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+444;Plusdifferenz auf QS-gesperrter Bestand;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;Y;
+445;Inventurdifferenz BUB-Erhoehung;305;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+446;Inventurdifferenz BUB-Verringerung;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;;
+447;Einlagerung Ruecksendestelle;;90;Initialzugang; Initialzugang Umsatz;N;N;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;N;
+448;Storno Wareneingang Retoure;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;12;WE Retoure;Wareneingang (WE) Retoure;N;N;N;
+449;Warenrueckgabe aus OCE;;42;Int.warenabzug IWA;Umsatz Interner Warenabzug und Warenruecklauf;N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+450;Lagerschaden auf WA-Lieferant;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;7;Rueckgabe Lieferant;Umsatz Rueckgabe von Ware an Lieferant;N;N;;
+451;Storno Lagerschaden auf WA-Lieferant;;7;Rueckgabe Lieferant;Umsatz Rueckgabe von Ware an Lieferant;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+452;Lagerschaden auf Totalschaden;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;;
+453;Storno Lagerschaden auf Totalschaden;305;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+454;Lagerschaden auf Umsatz Dritt.;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;33;Drittverk. /Verwert.;"Drittverkauf / Verwertung direkt aus dem Lager bzw. Fililale
+Abgang aus BUB";N;N;;
+455;Storno Lagerschaden auf Umsatz Dritt.;305;33;Drittverk. /Verwert.;"Drittverkauf / Verwertung direkt aus dem Lager bzw. Fililale
+Abgang aus BUB";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+456;Lagerschaden auf BUB-Korrektur;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+457;Storno Lagerschaden auf BUB-Korrektur;305;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+458;LSB auf Gesp. Bestand (LSB Lieferant);340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+459;Storno LSB Lieferant auf Gesp. Bestand;330;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;;
+460;Inventurdiff. pos. in reserv.Bestand;-1;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+461;Erhöhung externer Bestand;-1;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;N;
+462;Reduzierung  externer Bestand;-1;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+463;WA-Kunde externer Bestand;-1;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;N;194
+464;Differenzausgleich AKS (Versand plus);;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+465;Differenzausgleich AKS (Versand minus);;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;N;
+466;Buchung Uebergabe an Aufbereiter;;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;40;Aufbereitung Stionär;Aufbereitungsbestand Stationaer (Veredelung der Ware fuer Einsatz in Filialen z.B. durch BFS);Y;N;N;
+467;Storno Buchung Aufbereiter;;40;Aufbereitung Stionär;Aufbereitungsbestand Stationaer (Veredelung der Ware fuer Einsatz in Filialen z.B. durch BFS);Y;N;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;N;
+468;pos. Inventurdiff. Aufbereit;;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;40;Aufbereitung Stionär;Aufbereitungsbestand Stationaer (Veredelung der Ware fuer Einsatz in Filialen z.B. durch BFS);Y;N;N;
+469;Storno Reservierung;;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;34;Beauftragter Best.;Zur Auslagerung beauftragter Bestand im Zentrallager Stationär/Filiale SAS/Caruso;Y;N;N;
+470;St. Transp. abg.;;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;40;Aufbereitung Stionär;Aufbereitungsbestand Stationaer (Veredelung der Ware fuer Einsatz in Filialen z.B. durch BFS);Y;N;N;
+471;Inventur pos. Abgr. Reserviert Stationär;;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+472;Inventur neg. Abgr. Reserviert Stationär;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;;
+473;Inventur pos. Abgr. Aufbereit. Stationär;;40;Aufbereitung Stionär;Aufbereitungsbestand Stationaer (Veredelung der Ware fuer Einsatz in Filialen z.B. durch BFS);Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+474;Inventur neg. Abgr. Aufbereit. Stationär;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;40;Aufbereitung Stionär;Aufbereitungsbestand Stationaer (Veredelung der Ware fuer Einsatz in Filialen z.B. durch BFS);Y;N;;
+475;Inventur Abgrenzung TLIB gesperrt;;13;Transp.best gesperrt;"Transportbestand; der nicht zusagbar und nicht lieferbar ist";Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;;
+476;Inventur Abgrenzung TLIB gesperrt neg.;;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;13;Transp.best gesperrt;"Transportbestand; der nicht zusagbar und nicht lieferbar ist";Y;N;;
+477;Inventur Abgrenzung QS gesperrt;-1;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;;
+478;Inventur Abgrenzung QS gesperrt neg.;-1;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;;
+479;Inventur Abgrenzung Reserv. Stat.;;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;;
+480;Inventur Abgrenzung Reserv. Stat. neg.;;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;;
+481;Inventur Abgrenzung Aufbereitung stat.;;40;Aufbereitung Stionär;Aufbereitungsbestand Stationaer (Veredelung der Ware fuer Einsatz in Filialen z.B. durch BFS);Y;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;;
+482;Inventur Abgrenzung Aufbereit. stat. neg;;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;40;Aufbereitung Stionär;Aufbereitungsbestand Stationaer (Veredelung der Ware fuer Einsatz in Filialen z.B. durch BFS);Y;N;;
+483;Ausbuchung des gesperrter Bestand;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+484;Ausbuchung des Transportbestand;;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+485;Ausbuchung des Fakturierbar Bestand;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+486;Ausbuchung des Bestandsdifferenzen;;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+487;Ausbuchung des Ruecksendestelle;;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+488;Ausbuchung des Retoureneingang;;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+489;Ausbuchung des Transp.best gesperrt;;13;Transp.best gesperrt;"Transportbestand; der nicht zusagbar und nicht lieferbar ist";Y;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+490;Ausbuchung des Transportbestand abg;;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+491;Ausbuchung des QS gesperrter Best.;;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+492;Ausbuchung des Reserviert Stationär;;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+493;Ausbuchung des externer Bestand;;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+494;Ausbuchung des QS ungeprüft / WE1;;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+495;Ausbuchung des ALT: ALT: Angeford. ;;30;ALT: ALT: Angeford.;"Angeforderter Filialnachschub; physische Auslieferung noch nicht bestätigt";Y;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+496;Ausbuchung des Beauftragter Best.;;34;Beauftragter Best.;Zur Auslagerung beauftragter Bestand im Zentrallager Stationär/Filiale SAS/Caruso;Y;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+497;Ausbuchung des Reserviert Versand;;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+498;Ausbuchung des Sport Scheck intern.;;39;Sport Scheck intern.;Reservierter Bestand für SportScheck-International-Aktivitäten im Rahmen der logischen Bestandstrennung. Nur für Lager 23/25. Nur zur Bebuchung durch die Retail-Schicht. Teil des Buchbestands.;Y;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+499;Ausbuchung des Aufbereitung Stionär;;40;Aufbereitung Stionär;Aufbereitungsbestand Stationaer (Veredelung der Ware fuer Einsatz in Filialen z.B. durch BFS);Y;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+500;Ausbuchung des ALT: ALT: Reservelag;;43;ALT: ALT: Reservelag;Reserverlagerbestand (nur Hamburg);N;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+501;Ausbuchung des Virt. Bestand;;45;Virt. Bestand;Vitueller Bestand;N;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+502;Ausbuchung des Transp. gesp. n-bub;;94;Transp. gesp. n-bub;Gesperrter nicht bub-relevanter Transportbestand (der Rücksendestelle) für den Konzern;N;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+503;Ausbuchung des Bestand RS nicht-bub;;95;Bestand RS nicht-bub;nicht bub-relevanter Bestand der Rücksendestelle für den Konzern;N;N;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;N;
+504;Einbuchung des gesperrter Bestand;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+505;Einbuchung des Transportbestand;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+506;Einbuchung des Fakturierbar Bestand;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+507;Einbuchung des Bestandsdifferenzen;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;N;
+508;Einbuchung des Ruecksendestelle;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;N;
+509;Einbuchung des Retoureneingang;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;9;Retoureneingang;"Retourenbestand im Lager; eingegangen; aber noch nicht geprueft und damit kein verfuegbarer Bestand";Y;N;N;
+510;Einbuchung des Transp.best gesperrt;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;13;Transp.best gesperrt;"Transportbestand; der nicht zusagbar und nicht lieferbar ist";Y;N;N;
+511;Einbuchung des Transportbestand abg;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;N;
+512;Einbuchung des QS gesperrter Best.;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;N;
+513;Einbuchung des Reserviert Stationär;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;17;Reserviert Stationär;"Reserviert fuer Entnahme im Kommissionierlager (Stationaer); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";Y;N;N;
+514;Einbuchung des externer Bestand;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;N;
+515;Einbuchung des QS ungeprüft / WE1;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;25;QS ungeprüft / WE1;Wareneingänge nach Vereinnahmung per WE1 und vor Freischaltung per WE2 im Zustand QS-ungeprüft bzw. wartend auf Zollfreigabe;N;N;N;
+516;Einbuchung des ALT: ALT: Angeford. ;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;30;ALT: ALT: Angeford.;"Angeforderter Filialnachschub; physische Auslieferung noch nicht bestätigt";Y;N;N;
+517;Einbuchung des Beauftragter Best.;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;34;Beauftragter Best.;Zur Auslagerung beauftragter Bestand im Zentrallager Stationär/Filiale SAS/Caruso;Y;N;N;
+518;Einbuchung des Reserviert Versand;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;
+519;Einbuchung des Sport Scheck intern.;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;39;Sport Scheck intern.;Reservierter Bestand für SportScheck-International-Aktivitäten im Rahmen der logischen Bestandstrennung. Nur für Lager 23/25. Nur zur Bebuchung durch die Retail-Schicht. Teil des Buchbestands.;Y;N;N;
+520;Einbuchung des Aufbereitung Stionär;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;40;Aufbereitung Stionär;Aufbereitungsbestand Stationaer (Veredelung der Ware fuer Einsatz in Filialen z.B. durch BFS);Y;N;N;
+521;Einbuchung des ALT: ALT: Reservelag;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;43;ALT: ALT: Reservelag;Reserverlagerbestand (nur Hamburg);N;N;N;
+522;Einbuchung des Virt. Bestand;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;45;Virt. Bestand;Vitueller Bestand;N;N;N;
+523;Einbuchung des Transp. gesp. n-bub;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;94;Transp. gesp. n-bub;Gesperrter nicht bub-relevanter Transportbestand (der Rücksendestelle) für den Konzern;N;N;N;
+524;Einbuchung des Bestand RS nicht-bub;;96;Artikeldeaktivierung;Konto für die Buchung von gelöschten Artikeln;N;N;95;Bestand RS nicht-bub;nicht bub-relevanter Bestand der Rücksendestelle für den Konzern;N;N;N;
+525;Storno manuelle Bestandsberichtigung;315;4;Bestandsdifferenzen;Bestandsfifferenzen / Fehlbestand: Noch nicht inventurwirksam ausgebuchter erkannter Fehlbestand als Bestandteil des Buchbestandes;Y;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+526;RES bei Nachbearbeitung im Wareneingang;;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;N;
+527;Storno: Totalschaden aus QS gesperrt;;22;Totalschaden;"Umsatz ausgebucht per Kanalbuchung: Genutzt in Altsystemen fuer alle Kanalbuchungen gemeinsam; neu nur fuer den Kanal Totalschaden";N;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;N;
+528;Inventurdifferenz auf Lager 0;;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;Y;
+529;Zg aus Musterung Zentr.Lg.;;42;Int.warenabzug IWA;Umsatz Interner Warenabzug und Warenruecklauf;N;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;N;
+530;Ruecksendestelle -> Drittverkauf;;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;33;Drittverk. /Verwert.;"Drittverkauf / Verwertung direkt aus dem Lager bzw. Fililale
+Abgang aus BUB";N;N;;
+531;Drittverkauf -> Ruecksendestelle;;33;Drittverk. /Verwert.;"Drittverkauf / Verwertung direkt aus dem Lager bzw. Fililale
+Abgang aus BUB";N;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;;
+532;Rücksendestelle -> WRR;;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;7;Rueckgabe Lieferant;Umsatz Rueckgabe von Ware an Lieferant;N;N;;
+533;Rücksendestelle -> Storno WRR;;7;Rueckgabe Lieferant;Umsatz Rueckgabe von Ware an Lieferant;N;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;;
+534;KARL-Auslag. an TLIB Ziel K.15;338;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;
+535;WA externer Bestand an Konzernlager;;19;externer Bestand;externer Bestand (bestandsintegrierte Nichtlagerware und DirectOSS-Artikel);N;Y;97;Umfuhr extern BI-NLW;Externe Umfuhr für bestandsintegrierte Nichtlagerware (BI-NLW) im Rahmen von Bestellungen durch 3Suisses.;N;N;N;194
+536;Lieferantenstorno BI-NLW;;97;Umfuhr extern BI-NLW;Externe Umfuhr für bestandsintegrierte Nichtlagerware (BI-NLW) im Rahmen von Bestellungen durch 3Suisses.;N;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+537;LIB nach Transportbestand gesperrt;;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;13;Transp.best gesperrt;"Transportbestand; der nicht zusagbar und nicht lieferbar ist";Y;N;Y;194
+538;WA ext. Bestand an Konzernlager Retoure;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;98;WA Konzern Retoure;WA Konzern Retoure KP Löhne;N;N;N;
+539;Fakturierung NLW (echte NLW);;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;N;
+540;Retoureneingang NLW beim Lieferanten;;12;WE Retoure;Wareneingang (WE) Retoure;N;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+541;Bereinigung gesperrter Bestand;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+542;BUB-Reduz. aus faktf. Bestand (gl.Lager);310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+543;BUB-Reduzierung aus faktf. Bestand;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;Y;46
+544;BUB-Reduzierung aus gesp. Bestand;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+545;WA unfreier Bestand diff. wh;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;Y;
+546;Buchen BKZ-Ware in den Tlib;339;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;
+547;gesp-T-LIB auf Inv.Diff gleiches Lager;;13;Transp.best gesperrt;"Transportbestand; der nicht zusagbar und nicht lieferbar ist";Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;N;
+548;Inv.Diff auf gesp-T-LIB gleiches Lager;;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;13;Transp.best gesperrt;"Transportbestand; der nicht zusagbar und nicht lieferbar ist";Y;N;N;
+549;gesp-T-LIB auf Inv.Diff verschied. Lager;;13;Transp.best gesperrt;"Transportbestand; der nicht zusagbar und nicht lieferbar ist";Y;N;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;Y;
+550;Inv.Diff auf gesp-T-LIB verschied. Lager;;10;Inventurdifferenz;Aus dem Buchbestand ausgebuchte Inventurdiffenz (Umsatz);N;N;13;Transp.best gesperrt;"Transportbestand; der nicht zusagbar und nicht lieferbar ist";Y;N;Y;
+551;Retoure direkt Rücksendebetrieb;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;;
+552;Storno Retoure - Rücksendebetrieb;;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+553;Rücksendestelle -> Fundgrube;;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;77;KTO 77 / Fundgrube;Abgabe über Kanal/Konto 77 Richtung Fundgrube;N;N;;
+554;gesperrt -> Fundgrube;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;77;KTO 77 / Fundgrube;Abgabe über Kanal/Konto 77 Richtung Fundgrube;N;N;;
+555;Storno: Rücksendestelle -> Fundgrube;;77;KTO 77 / Fundgrube;Abgabe über Kanal/Konto 77 Richtung Fundgrube;N;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;;
+556;Storno: gesperrt -> Fundgrube;;77;KTO 77 / Fundgrube;Abgabe über Kanal/Konto 77 Richtung Fundgrube;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+557;WE - NLW Retoure;;12;WE Retoure;Wareneingang (WE) Retoure;N;N;99;NWL-Zwischenkonto;Umsatz zwischen Retoureneingang und Belastung Lieferant;N;N;;
+558;Storno WE - NLW Retouren;;99;NWL-Zwischenkonto;Umsatz zwischen Retoureneingang und Belastung Lieferant;N;N;12;WE Retoure;Wareneingang (WE) Retoure;N;N;;
+559;NLW Retoure Belastung Lieferant;;99;NWL-Zwischenkonto;Umsatz zwischen Retoureneingang und Belastung Lieferant;N;N;7;Rueckgabe Lieferant;Umsatz Rueckgabe von Ware an Lieferant;N;N;;
+560;Storno NLW Retoure Belastung Lieferant;;7;Rueckgabe Lieferant;Umsatz Rueckgabe von Ware an Lieferant;N;N;99;NWL-Zwischenkonto;Umsatz zwischen Retoureneingang und Belastung Lieferant;N;N;;
+3001;Umsatz WE in fakturf. Bestand;300;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+3002;Umsatz WE in fakturf. Bestand;300;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+3003;BUB-Erhöhung in faktf. Bestand;300;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+3006;Umsatz Retoure in fakturf. Bestand;300;12;WE Retoure;Wareneingang (WE) Retoure;N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+3007;Retoureneingang freier Bestand diff WH;300;12;WE Retoure;Wareneingang (WE) Retoure;N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+3050;Umsatz WE in gesp. Bestand;305;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+3051;BUB-Erhöhung in gesp. Bestand;305;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+3052;Umsatz Retoure gesp. Bestand gl. Lager;305;12;WE Retoure;Wareneingang (WE) Retoure;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+3053;Retoureneingang unfreier Bestand diff wh;305;12;WE Retoure;Wareneingang (WE) Retoure;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+3054;Umsatz Kunde in gesp. Bestand;305;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+3055;Umsatz WE in gesp.Bestand;305;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+3101;BUB-Reduz. aus faktf. Bestand (gl.Lager);310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+3102;BUB-Reduzierung aus faktf. Bestand;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;Y;46
+3104;BUB-Reduzierung aus faktf. Bestand (NHW);310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;Y;
+3105;WA-Kunde aus fakt. Bestand;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;;46
+3106;WA-Kunde aus fakt. Bestand (NHW);310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;;
+3107;WA-Kunde aus fakt. Bestand (gl. Lager);310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;N;
+3108;Fakturierung 23/25 aus fakt.Best.;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;38;Reserviert Versand;"Reserviert fuer Entnahme im Kommissionierlager (Versand); jedoch noch nicht kommissioniert (Ergebnis der Lagerfakturierung)";N;N;N;46
+3109;Auslagerung nach Konzern-Laufkette;315;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;N;
+3110;Einlagerung aus Konzern-Laufkette;305;6;WE Lieferant;Wareneingang vom Lieferanten (Umsatz);N;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;N;
+3111;WE aus Transit abg in QS;;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+3112;Eingang Retoure SM;;12;WE Retoure;Wareneingang (WE) Retoure;N;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;N;
+3113;Einlagerung Retoure SM K.Lager;330;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+3114;Einlagerung Retoure Konzern K.Lager;330;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+3115;Storno Einlagerung Retoure SM;340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;Y;
+3116;Storno Einlagerung Retoure Konzern;340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+3150;BUB-Reduzierung aus gesp. Bestand;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+3152;WA unfreier Bestand diff. wh;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;Y;
+3153;WA-Kunde aus gesp. Bestand;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;N;
+3300;LIB Erhöhung;330;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+3301;Erhöhung fakturierfähiger Bestand;330;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+3361;Einlagerung Transport;336;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;46
+3362;Einlagerung Transport;336;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;46
+3371;Plusdifferenz gleiches Lager;330;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+3372;Plusdifferenz;330;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+3380;Plusdifferenz Transportbestand gl. Lager;339;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+3381;Plusdifferenz Transportbestand;339;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;
+3390;Erhöhung Transportbestand;339;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;
+3391;Erhöhung Transportbestand;339;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+3392;Retoureneingang;339;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+3400;LIB Verminderung;340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+3401;Reduzierung fakturierfähiger Bestand;340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+3402;Reduzierung fakturierfähiger Bestand;340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+3461;Einstellung in Umfuhr;346;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;
+3462;Einstellung in Umfuhr;346;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+3465;Einstellung in Umfuhr ver. Lager Graz;346;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;194
+3471;Minusdifferenz gleiches Lager;340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+3472;Minusdifferenz;340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+3480;Minusdifferenz Transportbestand gl.Lager;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+3481;Minusdifferenz Transportbestand;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+3491;Ausbuchung Umfuhr;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+3492;Ausbuchung Umfuhr;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+4410;Lagerdifferenzen u. Rechnungskorrekturen;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;Y;
+4411;Berichtigung einer Rechnung im Betrieb;305;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+4412;Berichtigung einer Rechnung im Betrieb;305;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+4420;Storno einer Rechnung;305;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+4421;Storno einer Rechnung;305;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+4430;Manuelle Gutschrift;305;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+4431;Manuelle Gutschrift;305;8;WA Kunde;Warenausgang (WA) Kunde. Verkauf an Kunde Versand und Stationär.;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+5001;KABA: Freier Bestand - KABA_TBestand;346;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;Y;162
+5003;KABA: Transportb. - KABA freier B.;336;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;162
+5004;KABA: Transportb. - KABA freier B.;336;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;162
+5007;KABA Storno: TLIB - RLIB;336;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;Y;
+8100;SEZ-Rueckgaben;305;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+8101;SEZ-Rueckgaben;305;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+8300;Belastung Sonderdrittverkauf;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+8400;Gutschrift Sonderdrittverkauf;305;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+8401;Gutschrift Sonderdrittverkauf;305;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+8600;Gutschrift Sonderdrittverkauf;305;12;WE Retoure;Wareneingang (WE) Retoure;N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+9960;Inventurkorrektur Pos./Neg. Stammlager;305;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+9961;Inventurkorr.-gesperrter B. an Stammlag;-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+9962;Inventurkorrektur BUB-Erhöhung;305;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;;
+9963;Inventurkorrektur BUB-Verringerung;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;;
+9964;Inventurkorrektur Pos. Lager 0;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;Y;
+9970;Pos. TransBestDiff. Kontenabgr. Inventur;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+9971;Neg. TransBestDiff. Kontenabgr. Inventur;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+9972;Pos.Diff.Kto.n.liefb./gesp.Bstd Inventur;-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+9973;Neg.Diff.Kto.n.liefb./gesp.Bstd Inventur;-1;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+9980;Abgleich Korrektur freier Bestand;310;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;Y;
+9981;Abgleich Korrektur Transportbestand;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;Y;
+9981;Abgleich Korrektur Transportbestand;315;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;Y;
+9982;Abgleich Korrektur LIB-BUB-Diff;315;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;93;BUB-wirks. BestKorr;"BUB-wirksame Bestandskorrekturen. Konto für Korrekturen (Verwertung; IWA; Umzeichnung; Inventurdifferenz; ASTA-Abgleich bei Notfallbetrieb etc.)";N;N;N;
+9983;Abgleich Korrektur freier Bestand R206;340;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+9984;Abgleich Korrektur Transportbestand R206;349;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;Y;
+9990;Init freier Bestand;300;90;Initialzugang; Initialzugang Umsatz;N;N;3;Fakturierbar Bestand;Freier Lagerbestand;Y;Y;N;
+9991;Virt. WE an virt. Bestand;;44;Virt. Wareneingang;Vitueller Wareneingang;N;N;45;Virt. Bestand;Vitueller Bestand;N;N;N;
+9992;Virt. Bestand an virt. WA;;45;Virt. Bestand;Vitueller Bestand;N;N;46;Virt. Warenausgang;Vitueller Warenausgang;N;N;N;
+9993;Init Transportbest.;;90;Initialzugang; Initialzugang Umsatz;N;N;2;Transportbestand;"Transport-Bestand (Umfuhr-Bestand)
+Für Filialen temporär Umfuhren aller Filialen auf ID_Warehouse=16 kumuliert";Y;N;N;
+9994;Init BUB-Differenzen;;91;ALT: ALT: DIFF BUB;" Initialzugang Differenz BUB-Umsatz (fällt
+noch weg)";N;N;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;N;
+9995;WE aus Transit abg in QS;;14;Transportbestand abg;abgehender Transportbestand fuer Stationaergeschaeft;Y;N;15;QS gesperrter Best.;von Qualitätssicherung gesperrter Bestand;Y;N;Y;
+9996;Entsperren inventurgesperrter Bestände;;1;gesperrter Bestand;Nicht lieferbarer / gesperrter Bestand;Y;N;5;Ruecksendestelle;Bestand der Ruecksendestelle für Ruecklieferungen an Lieferanten als Bestandteil des BUB;Y;N;N;
