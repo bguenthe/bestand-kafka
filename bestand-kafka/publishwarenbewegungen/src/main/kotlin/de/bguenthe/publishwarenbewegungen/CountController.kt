@@ -1,6 +1,7 @@
 package de.bguenthe.publishwarenbewegungen
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import mu.KotlinLogging
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.core.io.Resource
@@ -19,6 +20,7 @@ data class Warenbewegungen(var process: String, var uuid: String, val itemoption
                            val salesprice: String, val id_stockpostingsource: String, val id_stockpostingtype: String,
                            val vouchernumer: String)
 
+private val logger = KotlinLogging.logger {}
 
 @RestController
 class CountController {
@@ -30,7 +32,6 @@ class CountController {
     lateinit var res: Resource
 
     val counter = AtomicLong()
-    val sleep = 0L
 
     @GetMapping("/count")
     fun count() =
@@ -49,10 +50,6 @@ class CountController {
                 var jsonStr = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(warenbewegungen)
                 kafkaTemplate.send("warenbewegungen", uuid.toString(), jsonStr)
                 counter.getAndIncrement()
-                if (counter.get() % 1000 == 0L) {
-                    println(counter)
-                }
-                Thread.sleep(sleep)
             }
         }
     }
@@ -70,7 +67,7 @@ class CountController {
                 var jsonStr = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(warenbewegungen)
                 kafkaTemplate.send("warenbewegungen", uuid.toString(), jsonStr)
                 counter.getAndIncrement()
-                if (counter.get() % 100 == 0L) {
+                if (counter.get() % 1000 == 0L) {
                     return
                 }
             }
