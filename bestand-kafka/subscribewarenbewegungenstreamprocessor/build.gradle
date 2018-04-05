@@ -57,6 +57,8 @@ dependencies {
 	compile("org.jetbrains.kotlin:kotlin-reflect")
     compile 'org.springframework.cloud:spring-cloud-stream'
     compile 'org.springframework.cloud:spring-cloud-starter-stream-kafka'
+    compile group: 'org.apache.kafka', name: 'kafka-clients', version: '1.1.0'
+    compile group: 'org.apache.kafka', name: 'kafka-streams', version: '1.1.0'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('io.projectreactor:reactor-test')
 }

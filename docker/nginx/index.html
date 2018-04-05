@@ -41,8 +41,14 @@
     <h3>Gespeicherte Sätze Mongo:</h3>
     <div id="submongo">
     </div>
-    <h3>Prozessierte Sätze:</h3>
+    <h3>Gelesene und nicht verarbeitete Sätze:</h3>
+    <div id="subreceived">
+    </div>
+    <h3>Streamed Sätze:</h3>
     <div id="subprocessed">
+    </div>
+    <h3>Bestand:</h3>
+    <div id="subbestand">
     </div>
 
 </div>
@@ -77,7 +83,22 @@
         document.getElementById('submongo').innerHTML = '<div>' + message.data + '</div>';
     };
 
-    var wssubprocessed = new WebSocket("ws://localhost:8082/subscribewarenbewegungenstreamprocessor/count");
+    var wssubreceived = new WebSocket("ws://localhost:8082/subscribewarenbewegungenstreamprocessor/count");
+    wssubreceived.onopen = function () {
+        console.log('connection established')
+    };
+    wssubreceived.onclose = function () {
+        console.log('connection closed')
+    };
+    wssubreceived.onerror = function (err) {
+        console.log('error: ', err)
+    };
+    wssubreceived.onmessage = function (message) {
+        // console.log(message.data)
+        document.getElementById('subreceived').innerHTML = '<div>' + message.data + '</div>';
+    };
+
+    var wssubprocessed = new WebSocket("ws://localhost:8082/subscribewarenbewegungenstreamprocessor/processed");
     wssubprocessed.onopen = function () {
         console.log('connection established')
     };
@@ -91,6 +112,22 @@
         // console.log(message.data)
         document.getElementById('subprocessed').innerHTML = '<div>' + message.data + '</div>';
     };
+
+    var wssubbestand = new WebSocket("ws://localhost:8083/subscribebestandsbewegungen/count");
+    wssubbestand.onopen = function () {
+        console.log('connection established')
+    };
+    wssubbestand.onclose = function () {
+        console.log('connection closed')
+    };
+    wssubbestand.onerror = function (err) {
+        console.log('error: ', err)
+    };
+    wssubbestand.onmessage = function (message) {
+        // console.log(message.data)
+        document.getElementById('subbestand').innerHTML = '<div>' + message.data + '</div>';
+    };
+
 
     $(function(){
         $('#sendvollepulle').on('click', function (e) {

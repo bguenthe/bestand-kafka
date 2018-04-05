@@ -11,6 +11,7 @@ data class CountWarenbewegungen(val id: Long)
 class CountController {
 
     val counter = AtomicLong()
+    val processed = AtomicLong()
 
     @GetMapping("/count")
     fun count() =

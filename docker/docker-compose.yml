@@ -67,3 +67,11 @@ services:
      - kafka
     environment:
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+  subscribebestandsbewegungen:
+    build: ../bestand-kafka/subscribebestandsbewegungen
+    ports:
+      - "8083:8083"
+    links:
+     - kafka
+    environment:
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092

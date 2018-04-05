@@ -20,8 +20,6 @@ data class Warenbewegungen(var process: String, var uuid: String, val itemoption
                            val salesprice: String, val id_stockpostingsource: String, val id_stockpostingtype: String,
                            val vouchernumer: String)
 
-private val logger = KotlinLogging.logger {}
-
 @RestController
 class CountController {
 

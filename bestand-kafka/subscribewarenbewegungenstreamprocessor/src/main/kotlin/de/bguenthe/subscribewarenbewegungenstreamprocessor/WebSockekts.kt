@@ -20,17 +20,17 @@ class WebSocketConfiguration {
     lateinit var countController: CountController
 
     @Bean
-    fun wsha() = WebSocketHandlerAdapter()
+    fun wsha1() = WebSocketHandlerAdapter()
 
     @Bean
-    fun hm(): HandlerMapping {
+    fun hm1(): HandlerMapping {
         val suhm = SimpleUrlHandlerMapping()
         suhm.order = 0
-        suhm.urlMap = mapOf("/subscribewarenbewegungenstreamprocessor/count" to wsh())
+        suhm.urlMap = mapOf("/subscribewarenbewegungenstreamprocessor/count" to wsh1())
         return suhm
     }
 
-    fun wsh(): WebSocketHandler {
+    fun wsh1(): WebSocketHandler {
         return WebSocketHandler { session ->
             val om = ObjectMapper()
             val publisher = Flux.generate(Consumer<SynchronousSink<CountWarenbewegungen>> { sink ->
