@@ -45,6 +45,7 @@ services:
     build: ../bestand-kafka/publishwarenbewegungen
     ports:
       - "8080:8080"
+      - "8000:8000"
     links:
      - kafka
      - mongo
@@ -54,6 +55,7 @@ services:
     build: ../bestand-kafka/subscribewarenbewegungenmongo
     ports:
       - "8081:8081"
+      - "8001:8001"
     links:
      - kafka
      - mongo
@@ -63,6 +65,7 @@ services:
     build: ../bestand-kafka/subscribewarenbewegungenstreamprocessor
     ports:
       - "8082:8082"
+      - "8002:8002"
     links:
      - kafka
     environment:
@@ -71,6 +74,7 @@ services:
     build: ../bestand-kafka/subscribebestandsbewegungen
     ports:
       - "8083:8083"
+      - "8003:8003"
     links:
      - kafka
     environment:
