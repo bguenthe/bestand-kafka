@@ -33,7 +33,7 @@ class Warenbewegungslistener {
             tlib += bestand.quantity
         }
 
-        println("BUB: ${bub}, LIB: ${lib}, TLIB: ${tlib}")
+//        println("BUB: ${bub}, LIB: ${lib}, TLIB: ${tlib}")
         countController.bublibtlib = "BUB: ${bub}, LIB: ${lib}, TLIB: ${tlib}"
 
         acknowledgment.acknowledge()

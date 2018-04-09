@@ -26,7 +26,8 @@ class CountController {
     @Autowired
     lateinit var kafkaTemplate: KafkaTemplate<String, String>
 
-    @Value("classpath:Warenbewegungen_Intrastat_20180323_090001.csv")
+//    @Value("classpath:Warenbewegungen_Intrastat_20180323_090001.csv")
+    @Value("classpath:wbtest.csv")
     lateinit var res: Resource
 
     val counter = AtomicLong()
