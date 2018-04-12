@@ -36,7 +36,7 @@ class Streamprocessor {
         config.put(StreamsConfig.APPLICATION_ID_CONFIG, "bestandsbewegungen")
         config.put(StreamsConfig.KEY_SERDE_CLASS_CONFIG, stringSerde.javaClass.name)
         config.put(StreamsConfig.VALUE_SERDE_CLASS_CONFIG, stringSerde.javaClass.name)
-        config.put(StreamsConfig.CLIENT_ID_CONFIG, "ede") // damit beide prozesse in diesem springbootprocess streams lesen
+        config.put(StreamsConfig.CLIENT_ID_CONFIG, "streamprocessot") // damit beide prozesse in diesem springbootprocess streams lesen
         config.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "kafka:9092")
         config.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest")
 
