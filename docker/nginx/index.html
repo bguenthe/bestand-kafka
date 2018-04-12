@@ -17,24 +17,11 @@
 
 </head>
 <body>
-<h1>GoTo</h1>
+<h1>Reactive Demo Bestand</h1>
 <div class="container">
     <input type="button" id="sendvollepulle" class="btn btn-info" value="Volle Pulle">
-    <input type="button" id="send100" class="btn btn-info" value="1000">
-    <div class="row">
-        <div class="col-md-4">
-            <a href="/mongocount/">Mongocount</a>
-        </div>
-        <div class="col-md-4">Anzahl verarbeiteter Datensätze
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <a href="/mongolast/">Mongolast</a>
-        </div>
-        <div class="col-md-4">Letzter gespeicherter Datensatz
-        </div>
-    </div>
+    <input type="button" id="send100" class="btn btn-info" value="Nur 1000 Messages">
+    <input type="button" id="mogolast" class="btn btn-info" value="Letzer Eintrag in der MongoDB">
     <h3>Gesendete Sätze:</h3>
     <div id="primes">
     </div>
@@ -50,6 +37,10 @@
     <h3>Bestand:</h3>
     <div id="subbestand">
     </div>
+    <h3>Letzer gespeicherter Datensatz:</h3>
+    <div id="mongolast">
+    </div>
+
 
 </div>
 <script>
@@ -138,6 +129,14 @@
     $(function(){
         $('#send100').on('click', function (e) {
             $.get("/pubslow/"); // no return data needed
+        });
+    });
+
+    $(function(){
+        $('#mogolast').on('click', function (e) {
+            $.get( "/mongolast/", function( data ) {
+                document.getElementById("mongolast").innerHTML = 'CorrelationID: ' + data.correlationid + "--- Datum: " + data.timestamp;
+            });
         });
     });
 
