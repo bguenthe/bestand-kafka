@@ -82,7 +82,7 @@ class Streamprocessor {
             }
 
             countController.processed.getAndIncrement()
-            ("""{"typ":"${typ}", "quantity":${quantity}}""")
+            ("""{"typ":"${typ}", "quantity":${quantity}, "correlationid":${quantity}}}""")
         }.to(outTopic)
 
         streams = KafkaStreams(builder, config)

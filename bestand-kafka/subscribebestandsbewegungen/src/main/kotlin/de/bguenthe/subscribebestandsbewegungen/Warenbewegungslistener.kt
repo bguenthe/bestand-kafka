@@ -8,7 +8,7 @@ import org.springframework.kafka.annotation.KafkaListener
 import org.springframework.kafka.support.Acknowledgment
 import org.springframework.stereotype.Component
 
-data class Bestand(val typ: String, val quantity: Long)
+data class Bestand(val correlationid: String, val typ: String, val quantity: Long)
 
 @Component
 class Warenbewegungslistener {
