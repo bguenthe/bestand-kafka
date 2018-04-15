@@ -8,7 +8,7 @@ import org.springframework.kafka.annotation.KafkaListener
 import org.springframework.kafka.support.Acknowledgment
 import org.springframework.stereotype.Component
 
-data class Bestand(val correlationid: String, val typ: String, val quantity: Long)
+data class Bestand(val sourceprocess: String, val currentprocess: String, val correlationid: String, val typ: String, val quantity: String)
 
 @Component
 class Warenbewegungslistener {
@@ -26,15 +26,18 @@ class Warenbewegungslistener {
         val bestand: Bestand = mapper.readValue<Bestand>(consumerRecord.value()!!)
 
         if (bestand.typ == "BUB") {
-            bub += bestand.quantity
+            bub += bestand.quantity.toLong()
         } else if (bestand.typ == "LIB") {
-            lib += bestand.quantity
+            lib += bestand.quantity.toLong()
         } else if (bestand.typ == "TLIB") {
-            tlib += bestand.quantity
+            tlib += bestand.quantity.toLong()
         }
 
 //        println("BUB: ${bub}, LIB: ${lib}, TLIB: ${tlib}")
-        countController.bublibtlib = "BUB: ${bub}, LIB: ${lib}, TLIB: ${tlib}"
+        countController.bublibtlib = """
+            |"BUB":"${bub}", "LIB":"${lib}", "TLIB":"${tlib}"
+            |""".trimMargin()
+        println(bestand.correlationid)
 
         acknowledgment.acknowledge()
     }

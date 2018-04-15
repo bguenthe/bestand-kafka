@@ -9,63 +9,93 @@ import {BestandStreamService} from "./bestandstream.service";
 export class AppComponent {
   ws = new WebSocket('ws://localhost:8080/publishwarenbewegungen/count');
   wsmongo = new WebSocket('ws://localhost:8081/subscribewarenbewegungenmongo/count');
+  wsstreamprocessor = new WebSocket('ws://localhost:8082/subscribewarenbewegungenstreamprocessor/count');
+  wsstreamprocessorprocessed = new WebSocket('ws://localhost:8082/subscribewarenbewegungenstreamprocessor/processed');
+  wsbestand = new WebSocket('ws://localhost:8083/subscribebestandsbewegungen/count');
+
 
   @ViewChild('progresschart')
   progresschart;
 
   publishcount: String;
 
+  charOptions: any;
+
   data: any;
-  dataNew: any;
 
   published = 0;
   mongo = 0;
+  streamprocessor = 0;
+  streamprocessorprocessed = 0;
 
   res: String[];
+  private chartOptions: any;
 
   constructor(private bestandStreamService: BestandStreamService) {
     this.data = {
-      labels: ['published', 'mongo', 'nursubscribe', 'streamprocessor', 'bestand'],
+      labels: ['published', 'mongo', 'streamprocessor', 'streamprocessorprocessed'],
       datasets: [
         {
           label: 'Count',
           backgroundColor: '#42A5F5',
           borderColor: '#1E88E5',
-          data: [0, 0, 0, 0, 0]
+          data: [0, 0, 0, 0]
         },
       ]
     };
 
+    this.chartOptions = {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true,
+            steps: 10,
+            stepValue: 5,
+            min: 0,
+            max: 2500000
+          }
+        }]
+      }
+    };
+
     this.ws.onmessage = (me: MessageEvent) => {
-      this.publishcount = me.data;
       let json = JSON.parse(me.data);
       this.published = json.id;
       this.updatebar();
     }
 
     this.wsmongo.onmessage = (me: MessageEvent) => {
-      this.publishcount = me.data;
       let json = JSON.parse(me.data);
       this.mongo = json.id;
       this.updatebar();
     }
+
+    this.wsstreamprocessor.onmessage = (me: MessageEvent) => {
+      let json = JSON.parse(me.data);
+      this.streamprocessor = json.id;
+      this.updatebar();
+    }
+
+    this.wsstreamprocessorprocessed.onmessage = (me: MessageEvent) => {
+      let json = JSON.parse(me.data);
+      this.streamprocessorprocessed = json.id;
+      this.updatebar();
+    }
+
+    this.wsbestand.onmessage = (me: MessageEvent) => {
+      let json = JSON.parse(me.data);
+      console.log(json.bub);
+      this.updatebar();
+    }
+
   }
 
   updatebar() {
-    this.dataNew = {
-      labels: ['published', 'mongo', 'nursubscribe', 'streamprocessor', 'bestand'],
-      datasets: [
-        {
-          label: 'Count',
-          backgroundColor: '#42A5F5',
-          borderColor: '#1E88E5',
-          data: [0, 0, 0, 0, 0]
-        },
-      ]
-    }
     this.data.datasets[0].data[0] = this.published;
     this.data.datasets[0].data[1] = this.mongo;
-    this.progresschart.update(0)
+    this.data.datasets[0].data[2] = this.streamprocessor;
+    this.data.datasets[0].data[3] = this.streamprocessorprocessed;
+    this.progresschart.refresh();
   }
 
   vollepulle(event) {
