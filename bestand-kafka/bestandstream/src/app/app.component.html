@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Bestand Stream
+  </h1>
+</div>
+
+<p-button (onClick)="vollepulle()" label="Volle Pulle"></p-button>
+<p-button (onClick)="volle1000()" label="Volle 1000"></p-button>
+<textarea rows="5" cols="30" pInputTextarea [(ngModel)]="publishcount">></textarea>
+<p-chart #progresschart type="bar" [data]="data"></p-chart>
