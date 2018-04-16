@@ -5,9 +5,25 @@
   </h1>
 </div>
 
-<p-button (onClick)="vollepulle()" label="Volle Pulle"></p-button>
-<p-button (onClick)="volle1000()" label="1000 Messages"></p-button>
-<p-button (onClick)="letzermongo()" label="letzer Eintrag Mongo"></p-button>
-<textarea rows="10" cols="30" pInputTextarea [(ngModel)]="publishcount">></textarea>
-<p-chart #progresschart type="bar" [width]="400" [height]="400"  [data]="data" [options]="chartOptions"></p-chart>
-<p-chart #bestandchart type="bar" [width]="400" [height]="400"  [data]="bestanddata" [options]="bestandChartOptions"></p-chart>
+<div class="ui-g">
+  <div class="ui-g-2">
+    <p-button (onClick)="vollepulle()" label="Volle Pulle"></p-button>
+  </div>
+  <div class="ui-g-2">
+    <p-button (onClick)="volle1000()" label="1000 Messages"></p-button>
+  </div>
+  <div class="ui-g-2">
+    <p-button (onClick)="letzermongo()" label="letzer Eintrag Mongo"></p-button>
+  </div>
+  <div class="ui-g-2">
+    <textarea rows="1" cols="50" pInputTextarea [(ngModel)]="publishcount">></textarea>
+  </div>
+</div>
+<div class="ui-g">
+  <div class="ui-g-6">
+    <p-chart #progresschart type="bar" [data]="data" [options]="chartOptions"></p-chart>
+  </div>
+  <div class="ui-g-6">
+    <p-chart #bestandchart type="bar" [data]="bestanddata" [options]="bestandChartOptions"></p-chart>
+  </div>
+</div>

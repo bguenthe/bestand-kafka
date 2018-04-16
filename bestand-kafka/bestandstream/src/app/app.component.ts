@@ -64,7 +64,7 @@ export class AppComponent {
 
     this.chartOptions = {
       // responsive: false,
-      maintainAspectRatio: false,
+      // maintainAspectRatio: false,
       scales: {
         yAxes: [{
           ticks: {
@@ -79,7 +79,7 @@ export class AppComponent {
 
     this.bestandChartOptions = {
       // responsive: false,
-      maintainAspectRatio: false,
+      // maintainAspectRatio: false,
       scales: {
         yAxes: [{
           ticks: {

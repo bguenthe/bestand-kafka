@@ -23,6 +23,7 @@ class Warenbewegungslistener {
 
         val warenbewegungen: Warenbewegungen = mapper.readValue<Warenbewegungen>(consumerRecord.value().toString())
         warenbewegungenRepository.save(warenbewegungen)
+        countController.correlationId = warenbewegungen.correlationid
 
         countController.counter.getAndIncrement()
 

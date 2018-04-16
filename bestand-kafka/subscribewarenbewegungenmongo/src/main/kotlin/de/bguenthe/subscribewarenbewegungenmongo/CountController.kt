@@ -13,7 +13,9 @@ class CountController {
     @Autowired
     lateinit var warenbewegungenRepository: WarenbewegungenRepository
 
-    val counter = AtomicLong()
+    var counter = AtomicLong()
+
+    var correlationId: String = ""
 
     @GetMapping("/count")
     fun count() =
@@ -21,5 +23,5 @@ class CountController {
 
     @GetMapping("/last")
     fun mongolast() =
-            warenbewegungenRepository.findTopByOrderByProcessDesc()
+            warenbewegungenRepository.findBycorrelationid(correlationId)
 }
