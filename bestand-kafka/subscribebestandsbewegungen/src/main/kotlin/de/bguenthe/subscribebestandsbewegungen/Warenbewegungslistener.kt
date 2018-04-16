@@ -33,11 +33,7 @@ class Warenbewegungslistener {
             tlib += bestand.quantity.toLong()
         }
 
-//        println("BUB: ${bub}, LIB: ${lib}, TLIB: ${tlib}")
-        countController.bublibtlib = """
-            |"BUB":"${bub}", "LIB":"${lib}", "TLIB":"${tlib}"
-            |""".trimMargin()
-        println(bestand.correlationid)
+        countController.bublibtlib = "{\"bub\":${bub}, \"lib\":${lib}, \"tlib\":${tlib}}"
 
         acknowledgment.acknowledge()
     }

@@ -12,7 +12,7 @@ class CountController {
 
     val counter = AtomicLong()
 
-    var bublibtlib : String = ""
+    var bublibtlib : String = "{\"bub\":0, \"lib\":0, \"tlib\":0}"
 
     @GetMapping("/count")
     fun count() =

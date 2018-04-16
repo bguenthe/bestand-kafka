@@ -6,6 +6,8 @@
 </div>
 
 <p-button (onClick)="vollepulle()" label="Volle Pulle"></p-button>
-<p-button (onClick)="volle1000()" label="Volle 1000"></p-button>
-<textarea rows="5" cols="30" pInputTextarea [(ngModel)]="publishcount">></textarea>
-<p-chart #progresschart type="bar" [data]="data" [options]="chartOptions"></p-chart>
+<p-button (onClick)="volle1000()" label="1000 Messages"></p-button>
+<p-button (onClick)="letzermongo()" label="letzer Eintrag Mongo"></p-button>
+<textarea rows="10" cols="30" pInputTextarea [(ngModel)]="publishcount">></textarea>
+<p-chart #progresschart type="bar" [width]="400" [height]="400"  [data]="data" [options]="chartOptions"></p-chart>
+<p-chart #bestandchart type="bar" [width]="400" [height]="400"  [data]="bestanddata" [options]="bestandChartOptions"></p-chart>
