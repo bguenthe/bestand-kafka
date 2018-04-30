@@ -6,6 +6,8 @@
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/bestand-kafka/bestand-kafka-gui/dist" />
       <excludeFolder url="file://$MODULE_DIR$/bestand-kafka/bestand-kafka-gui/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/bestand-kafka/bestandstream/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/bestand-kafka/bestandstream/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
     <orderEntry type="inheritedJdk" />
