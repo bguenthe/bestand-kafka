@@ -12,14 +12,13 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 import java.util.*
 import java.util.concurrent.TimeUnit
-import javax.annotation.PostConstruct
-import javax.annotation.PreDestroy
 import kotlin.collections.HashMap
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 
-@Component()
+@Component("wordCountStream")
 class Streamprocessor {
-
     data class Bestand(var typ: String, var quantity: Long)
 
     val bestand = HashMap<String, Long>()
@@ -32,6 +31,7 @@ class Streamprocessor {
     lateinit var countController: CountController
 
     @PostConstruct
+    //(siehe https://github.com/jkorab/kafka-streams-example/blob/master/src/main/java/com/ameliant/examples/WordCountStream.java))
     fun runStream() {
         val stringSerde = Serdes.String()
 
@@ -50,8 +50,8 @@ class Streamprocessor {
 //            val mapper = jacksonObjectMapper()
 //            val warenbewegungen: Warenbewegungen = mapper.readValue<Warenbewegungen>(value)
 //            val list: List<String> = listOf("300", "310", "330", "340", "336", "346")
-//            print("${warenbewegungen.id_stockpostingtype}, ${warenbewegungen.id_stockpostingtype.length}")
-//            print(warenbewegungen.id_stockpostingtype.length == 4 && warenbewegungen.id_stockpostingtype.substring(0..2) in list)
+//            println("${warenbewegungen.id_stockpostingtype}, ${warenbewegungen.id_stockpostingtype.length}")
+//            println(warenbewegungen.id_stockpostingtype.length == 4 && warenbewegungen.id_stockpostingtype.substring(0..2) in list)
 //        }
 
         kstream.filter { _, value ->
@@ -86,18 +86,17 @@ class Streamprocessor {
 
             countController.processed.getAndIncrement()
             KeyValue(typ, """{"typ":"${typ}", "quantity":"${quantity}", "correlationid":"${warenbewegungen.correlationid}", "sourceprocess":"${warenbewegungen.process}", "currentprocess":"streamprocessor"}}}""")
-        }
+        }.to(outTopic)
 
         val bestand: Bestand = Bestand("", 0L)
-        val agg: KTable<Windowed<String>, Long>? = kstream.groupByKey().windowedBy(TimeWindows.of(TimeUnit.SECONDS.toMillis(1)))
-                .aggregate({ bestand.quantity }, { key, value, value1 -> value1.toLong() + value.toLong()})
-        val nagg = agg!!.toStream()
-        nagg.to(outTopic)
+//        val agg: KTable<Windowed<String>, Long>? = kstream.groupByKey().windowedBy(TimeWindows.of(TimeUnit.SECONDS.toMillis(1)))
+//                .aggregate({ bestand.quantity }, { key, value, value1 -> value1.toLong() + value.toLong()})
+//        val nagg = agg!!.toStream()
+//        nagg.to(outTopic)
         streams = KafkaStreams(builder, config)
         streams!!.start()
     }
 
-    @PreDestroy
     fun closeStream() {
         streams!!.close()
     }

@@ -13,10 +13,10 @@ export class AppComponent {
   wsstreamprocessorprocessed = new WebSocket('ws://localhost:8082/subscribewarenbewegungenstreamprocessor/processed');
   wsbestand = new WebSocket('ws://localhost:8083/subscribebestandsbewegungen/count');
 
-  @ViewChild('progresschart')
+  @ViewChild('progresschart', {static: false} )
   progresschart;
 
-  @ViewChild('bestandchart')
+  @ViewChild('bestandchart', {static: false})
   bestandchart;
 
   chartOptions: any;
@@ -34,7 +34,7 @@ export class AppComponent {
   streamprocessor = 0;
   streamprocessorprocessed = 0;
 
-  private publishcount: String;
+  public publishcount: String;
 
   constructor(private bestandStreamService: BestandStreamService) {
     this.data = {
@@ -141,19 +141,19 @@ export class AppComponent {
     this.bestandchart.refresh();
   }
 
-  vollepulle(event) {
+  vollepulle() {
     this.bestandStreamService.getVollePulle().subscribe(res => {
       console.log(res);
     })
   }
 
-  volle1000(event) {
+  volle1000() {
     this.bestandStreamService.getVolle1000().subscribe(res => {
       console.log(res);
     })
   }
 
-  letzermongo(event) {
+  letzermongo() {
     this.bestandStreamService.getLetzerMongo().subscribe(res => {
       console.log(res);
       this.publishcount = res["correlationid"];

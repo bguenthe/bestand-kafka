@@ -1,6 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 /.idea/
-/.gradle/
+/.gradle_save/
 /bestand-kafka/publishwarenbewegungen/out/
 /bestand-kafka/publishwarenbewegungen/gradle/
 /bestand-kafka/publishwarenbewegungen/build/
